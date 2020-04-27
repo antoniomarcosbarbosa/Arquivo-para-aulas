@@ -1,0 +1,2635 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage{makeidx}
+\makeindex
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc} %Acentuação
+\usepackage{amssymb,gensymb,amsthm,amsmath}
+%\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+%\DeclareMathOperator{\grad}{grad}
+%\addcontentsline{toc}{chapter}{Introdução}.-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[pdftex]{color,graphicx}
+%\usepackage{amssymb}
+\usepackage{amsfonts}
+%\usepackage{amsmath}
+%\usepackage{epsfig}
+%\usepackage{amsthm}
+\usepackage{color}
+\usepackage[]{epsfig}
+\usepackage[]{pstricks}
+%\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   %///////////// Comandos para capítulos ///////////////////
+   \newtheorem{defcap}{Definição}[chapter]
+	 \newtheorem{lema}{Lema}[chapter]
+	 \newtheorem{teo}{Teorema}[chapter]
+	 \newtheorem{cor}{Corolário}[chapter]
+	 \newtheorem{prop}{Proposição}[chapter]
+	 \newtheorem{obscap}{Observação}[chapter]
+	 \newtheorem{exemplo}{Exemplo}[chapter]
+   \newtheorem{afir}{Afirmação}[chapter]
+
+	 %///////////// Comandos para seções ///////////////////
+	 \newtheorem{definition}{Definição}[section]
+	 \newtheorem{teosec}{Teorema}[section]
+	 \newtheorem{propsec}{Proposição}[section]
+	 \newtheorem{corsec}{Corolário}[section]
+	 \newtheorem{lemsec}{Lema}[section]
+	 \newtheorem{exsec}{Exemplo}[section]
+	 \newtheorem{obs}{Observação}[section]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\p}{\mathbb{P}}
+\newcommand{\s}{\mathbb{S}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\pl}{\mathbb{P}}
+\newcommand{\Hi}{\mathbb{H}}
+\newcommand{\xx}{\normalfont{\textbf{x}}}
+\newcommand{\yy}{\normalfont{\textbf{y}}}
+\newcommand{\zz}{\normalfont{\textbf{z}}}
+\newcommand{\be}{\beta}
+\newcommand{\al}{\alpha}
+\newcommand{\ria}{\rightarrow}
+\newcommand{\lra}{\Leftrightarrow}
+\newcommand{\Ria}{\Rightarrow}
+\newcommand{\de}{\partial}
+\newcommand{\sg}{\sigma}
+\newcommand{\w}{\wedge}
+\newcommand{\om}{\omega}
+\newcommand{\lb}{\lambda}
+
+
+\newcommand{\seta}{\longrightarrow}
+\newcommand{\contido}{\subset}
+\newcommand{\soma}{\displaystyle\sum_{i=0}^{n}}
+\newcommand{\implica}{\rightarrow}
+%\newcommand{\by}{\overline{y}}
+%\newcommand{\bz}{\overline{z}}
+%\newcommand{\bu}{\overline{u_1}}
+%\newcommand{\bv}{\overline{u_2}}
+\newcommand{\n}{\nabla}
+\newcommand{\mx}{\mathfrak{X}}
+\newcommand{\cd}{\mathcal{D}}
+\newcommand{\ran}{\rangle}
+\newcommand{\lan}{\langle}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\vp}{\varphi}
+\newcommand{\lap}{\Delta}
+\newcommand{\cri}{\Gamma}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\bM}{\overline{M}}
+\newcommand{\bn}{\overline{\nabla}}
+\newcommand{\bX}{\overline{X}}
+\newcommand{\bY}{\overline{Y}}
+\newcommand{\bZ}{\overline{Z}}
+\newcommand{\nn}{\nabla^\perp}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\te}{\theta}
+\newcommand{\bJ}{\overline{J}}
+\newcommand{\ff}{\overline{f}}
+\newcommand{\bA}{\overline{A}}
+\newcommand{\bV}{\overline{V}}
+\DeclareMathOperator{\cotg}{cotg}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\arctg}{arctg}
+\DeclareMathOperator{\arcsen}{arcsen}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\vol}{vol}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareMathOperator{\hess}{Hess}
+\DeclareMathOperator{\ric}{Ric}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\di}{div}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\graf}{graf}
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\cossec}{cossec}
+\DeclareMathOperator{\senh}{senh}
+\DeclareMathOperator{\tgh}{tgh}
+\DeclareMathOperator{\cotgh}{cotgh}
+\DeclareMathOperator{\intt}{int}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setlength{\topmargin}{-0.35 in} \setlength{\textwidth}{15cm}
+%\addtolength{\oddsidemargin}{-1.7cm}
+%\addtolength{\evensidemargin}{-1.7cm}
+%\setlength{\textheight}{23cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\DeclareMathOperator{\dim}{dim}
+
+\begin{document}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{2005} 
+\indent \par 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{1ª Avaliação-21 de fevereiro de 2005}
+\indent \par
+
+\begin{enumerate}
+
+\item Determine as assíntotas verticais e horizontais, caso existam, ao gráfico da função
+
+\begin{equation*}
+   f(x)=\dfrac{x^{3}-1}{5x^{3}-20x^{2}+15x}. 
+\end{equation*}
+%Escrever as fórcumas centralizadas utilizando o ambiente Equation pode evitar o uso inadvertído de cifrôes. Além que esse ambiente permite a referenciação.
+%$$f(x)=\dfrac{x^{3}-1}{5x^{3}-20x^{2}+15x}.$$
+\vspace{0.2cm}
+\item Calcule os seguintes limites:
+\vspace{0.2cm}
+\begin{enumerate}
+ \item[(a)] $\displaystyle\lim_{x\rightarrow2}\dfrac{\sqrt{x+2}-2}{x^{3}-8}$;
+  \vspace{0.2cm}
+ \item[(b)] $\displaystyle\lim_{x\rightarrow0^{+}}\left(\dfrac{1}{x}-\dfrac{1}{|x|}\right)$;
+\vspace{0.2cm}
+ \item[(c)] Use o Teorema do confronto para mostrar que $$\lim_{x\rightarrow0}x^{10}\mbox{sen}\left(\dfrac{50\pi}{\sqrt[3]{x}}\right)=0.$$
+\end{enumerate}
+\vspace{0.2cm}
+\item Considere a função $f$, definida por
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+\vspace{0.2cm}
+\dfrac{x^{2}-4}{x-2}+10, &  & x<2,\\
+2x^{3}-x, &  & x\geq2.\\
+\end{array}
+\right.
+$$\\
+\begin{enumerate}
+ \item[(a)] Determine para que valores de $x$ a função $f$ é contínua;
+  \vspace{0.2cm}
+ \item[(b)] Prove que existe $c$ tal que $f(c)=15$.
+\end{enumerate}
+\vspace{0.2cm}
+\item Seja $h$ a função definida por $h(x)=x|x-1|$.
+\begin{enumerate}
+ \item[(a)] Verifique se $h$ é diferenciável em $x_{0}=1$;
+  \vspace{0.2cm}
+ \item[(b)] Determine a equação da reta tangente ao gráfico de $h$ no ponto $(2,2)$.
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\normalsize
+
+\chapter{2007} 
+\indent \par 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{1ª Prova-15 de setembro de 2007}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+ \item[(a)] Se $f(x)=|x-3|$, mostre que $f$ é contínua em $x=3$ mas não é derivável em $x=3$.
+  \vspace{0.2cm}
+ \item[(b)] Prove que existe um número real cujo quadrado é igual ao seu cubo somado com 2.
+
+[\footnotesize Sugestão: Use o Teorema do Valor Intermediário]
+\end{enumerate}
+\normalsize
+\vspace{0.2cm}
+\item Determine, usando a definição de derivada de uma função em um ponto, uma equação para a reta tangente ao gráfico de $f(x)=\sqrt{2x^{2}+7x}$ em $x=1$.
+\item \begin{enumerate}
+ \item[(a)] Prove, usando a definição, que $\displaystyle\lim_{x\rightarrow6}\left(3-\dfrac{x}{4}\right)=\dfrac{3}{2}$.
+  \vspace{0.2cm}
+ \item[(b)] Ache as assíntotas verticais e horizontais da curva $f(x)=\dfrac{\sqrt{4x^{2}-1}}{3x-4}$, se existirem.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Calcule $\displaystyle\lim_{x\rightarrow8}\dfrac{\sqrt{7+\sqrt[3]{x}}-3}{x-8}$.
+  \vspace{0.2cm}
+ \item[(b)] Calcule os limites laterais da função $f(x)=3+\dfrac{[[x]]}{2}$ no ponto em que $x=3$.
+\end{enumerate}
+\item Um projétil é lançado verticalmente para cima e está a $s$ metros acima do solo, $t$ segundos depois de ser lançado, onde $s=256t-16t^{2}$. Calcule:
+\begin{enumerate}
+ \item[(a)] A velocidade do projétil 6 segundos após o lançamento.
+  \vspace{0.2cm}
+ \item[(b)] O tempo, em segundos, necessário para que o projétil atinja sua altura máxima (no ponto em que sua velocidade é 0 $m/s$).
+  \vspace{0.2cm}
+ \item[(c)] A altura máxima que o projétil atinge.
+\end{enumerate}
+
+\footnotesize Observação: Nesta última questão, você só deverá utilizar os conceitos adquiridos no Cálculo 1.
+
+
+\end{enumerate}
+
+
+
+\normalsize
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª Prova-05 de outubro de 2007}
+\indent \par
+
+\begin{enumerate}
+\item Considere a circunferência $x^{2}+y^{2}=4$. Se um ponto $P$ desta circunferência, no $1^o$ quadrante, é tal que o segmento $OP$ faz um ângulo de $75^o$ com o eixo dos $x$, prove que a tangente ao círculo nesse ponto faz um ângulo de $25^o$ com aquele eixo.
+
+[\footnotesize Sugestão: Use diferenciação implícita]
+
+\normalsize
+\item\begin{enumerate}
+ \item[(a)] Determine $\dfrac{dy}{dx}$, se $3x\cdot\mbox{arctg}(x+y)+107=x^{2}y$.
+  \vspace{0.2cm}
+ \item[(b)] Se $f(x)=\log_{3}5^{x^{2}+1}$, determine $f'(x)$.
+\end{enumerate}
+\item Encontre, no intervalo $[0,2\pi]$, os pontos sobre o gráfico da função $f(x)=2\mbox{sen}x+\mbox{sen}^{2}x$, onde a reta tangente é horizontal.
+\item \begin{enumerate}
+ \item[(a)] Obtenha uma equação da reta tangente à curva $y=\dfrac{1}{\mbox{sen}x+\cos x}$, no ponto em que $x=0$.
+  \vspace{0.2cm}
+ \item[(b)] Ache a derivada da função $f(x)=\mbox{sen}^{2}3^{\footnotesize\mbox{arctg}x^{4}}$.
+\end{enumerate}
+\item Encontre as inclinações das retas tangentes à curva $y=9-x^{2}$, no ponto $(2,1)$.
+
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{1ª Prova-06 de outubro de 2007}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+ \item[(a)] Prove que a função $f(x)=x\: \mbox{sen}\left(\frac{1}{x}\right)-\cos \left(\frac{1}{x}\right)$ tem assíntota ho-rizontal.
+ 
+[\footnotesize Sugestão: faça $\frac{1}{x}=\theta$.]
+\normalsize
+  \vspace{0.2cm}
+ \item[(b)] Determine $\dfrac{dy}{dx}$, onde $x\arccos(x+y)-\pi=y^{2}$.
+\end{enumerate}
+\item Obtenha uma equação de cada uma das retas que passam pelo ponto $(4,13)$ e que são tangentes à curva $y=2x^{2}-1$.
+\item Suponha que $f(x)=3x+|x|$ e $g(x)=\dfrac{3x}{4}-\dfrac{|x|}{4}$. Prove que $f'(0)$ e $g'(0)$ não existem, mas $(f\circ g)'(0)$ existe.
+\item \begin{enumerate}
+ \item[(a)] Obtenha uma equação para a reta tangente à curva $y=\dfrac{\mbox{tg}x-1}{\sec x}$, no ponto em que $x=0$.
+  \vspace{0.2cm}
+ \item[(b)] Determine a derivada da função $f(x)=\cos[\mbox{tg}\sqrt{\cos x}]$.
+  \vspace{0.2cm}
+ \item[(c)] Ache a derivada da função $g(x)=\sqrt{x+\sqrt{x}}$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Determine a derivada da função $f(x)=5^{\footnotesize\mbox{arctg}(\mbox{sen}x^{2})}$.
+  \vspace{0.2cm}
+ \item[(b)] Para quais valores de $k$ a função $y=e^{kx}$ satisfaz a equação $y''+5y'-6y=0$?
+\end{enumerate}
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{4ª Prova-01 de dezembro de 2007}
+\indent \par
+
+\begin{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Use o Teorema do Valor Médio para mostrar que a equação $x^{4}+4x+1000=0$ tem, no máximo, duas raízes reais.
+  \vspace{0.2cm}
+ \item[(b)] Se $f$ é contínua no intervalo $[2,5]$ e $1\leq f'(x)\leq4$ para todo $x$ em $(2,5)$, mostre que $3\leq f(5)-f(2)\leq12$.
+\end{enumerate}
+\item Ache os valores de $a$, $b$ e $c$ tais que a função $f(x)=ax^{2}+bx-c$ tenha um valor máximo relativo de 7 em $x=1$, e que o gráfico de $y=f(x)$ passe pelo ponto $(2,-2)$.
+\item \begin{enumerate}
+ \item[(a)] Mostre que o gráfico de $f$, definida por $f(x)=ax^{2}+bx+c$, é côncavo para cima se $a>0$ e é côncavo para baixo se $a<0$.
+  \vspace{0.2cm}
+ \item[(b)] Se $\displaystyle\lim_{x\rightarrow0^{+}}(cx+1)^{\footnotesize\mbox{cotg}x}=e^{-\pi}$, ache o valor de $c$.
+\end{enumerate}
+\item Esboce o gráfico de $f(x)=x^{2}e^{-x^{2}}$, depois de ter determinado suas interseções com os eixos coordenados, seus intervalos de crescimento e decrescimento, seus pontos críticos, suas concavidades e pontos de inflexão, bem como todas as suas assíntotas, se existirem.
+\item \begin{enumerate}
+ \item[(a)] Encontre sobre a hipérbole $x^{2}-y^{2}=1$ o ponto mais próximo do ponto $(0,-1)$.
+  \vspace{0.2cm}
+ \item[(b)] Sabemos que a reta $x+y=0$ tangencia o gráfico de uma função $f$ em determinado ponto e que essa função é tal que $f''(x)=3x^{2}$ e $f'(0)=0$. Determine a função $f$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{4ª Prova-06 de dezembro de 2007}
+\indent \par
+
+\begin{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Encontre a antiderivada mais geral da função $$f(x)=\sqrt{x}-7x^{-3/4}+3e^{x}+7\sec^{2}x+\pi.$$
+  \vspace{0.2cm}
+ \item[(b)] Encontre $f$, sabendo que $f''(x)=-3e^{x}+4\:\mbox{sen}x$, $f(0)=0$ e $f(\pi)=0$.
+\end{enumerate}
+\item Calcule o volume e as dimensões do cilindro circular reto de maior volume inscrito em um cone circular reto de altura 1 e raio da base 1.
+\item Calcule:
+\begin{enumerate}
+ \item[(a)] $\displaystyle\lim_{x\rightarrow\frac{\pi}{2}}(\cos x)^{\cos x}$.
+  \vspace{0.2cm}
+ \item[(b)] $\displaystyle\lim_{x\rightarrow\infty}\left(1+\dfrac{3}{x}+\dfrac{5}{x^{2}}\right)^{x}$.
+\end{enumerate}
+\item Calcule a área da região que está sob o gráfico de $f(x)=x^{3}+x^{2}$, entre $x=0$ e $x=1$.
+\item Faça o gráfico da função $f(x)=\dfrac{x^{3}-x+1}{x^{2}}$, depois de determinar:
+\begin{enumerate}
+ \item[(a)] seu domínio;
+  \vspace{0.2cm}
+ \item[(b)] suas interseções com os eixos coordenados;
+  \vspace{0.2cm}
+ \item[(c)] seus extremos relativos;
+  \vspace{0.2cm}
+ \item[(d)] seus intervalos de crescimento e decrescimento;
+   \vspace{0.2cm}
+ \item[(e)] os intervalos onde a concavidade é para cima ou para baixo;
+  \vspace{0.2cm}
+ \item[(f)] os pontos de inflexão;
+  \vspace{0.2cm}
+ \item[(g)] suas assíntotas, se existirem.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reavaliação da 2ª média-07 de dezembro de 2007}
+\indent \par
+
+\begin{enumerate}
+\item Despeja-se água num recipiente de forma cônica, à taxa de 8 $cm^{3}/min$. O cone tem 20 $cm$ de profundidade e 10 $cm$ de diâmetro em sua parte superior. Se existe um furo na base e o nível da água está subindo à taxa de 1 $mm/min$, determine com que velocidade a água está escoando, quando estiver a 16 $cm$ do fundo.
+\item \begin{enumerate}
+ \item[(a)] Obtenha uma equação para a reta tangente à curva $x^{y}=y^{x}$, no ponto em que $x=1$.
+  \vspace{0.2cm}
+ \item[(b)] Ache o ponto sobre a curva $y=\cosh x$ no qual a reta tangente tem inclinação igual a 1.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Para quais valores de $a$ e $b$ a função $f(x)=axe^{bx^{2}}$ tem um valor máximo no ponto $(2,1)$?
+  \vspace{0.2cm}
+ \item[(b)] Calcule $\displaystyle\lim_{x\rightarrow0}(1+ax)^{b/x}$.
+\end{enumerate}
+\item Um cilindro circular reto é gerado pela rotação de um retângulo de perímetro 20 em torno de um de seus lados. Que dimensões deve ter o retângulo para gerar o cilindro de volume máximo?
+\item Através das derivadas, estude o que for importante e faça o gráfico de $y=\dfrac{2x^{2}}{9-x^{2}}$.
+
+\end{enumerate}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\normalsize
+
+\chapter{2008} 
+\indent \par 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{1ª Prova-14 de março de 2008}
+\indent \par
+
+\begin{enumerate}
+\item Encontre uma equação da reta tangente ao gráfico da função $f(x)=\dfrac{1}{x^{2}}$ no ponto $(-2,1/4)$.
+\item Calcule os seguinte limites:
+\begin{enumerate}
+ \item[(a)] $\displaystyle\lim_{x\rightarrow0}\dfrac{\mbox{tg}(x-\pi)}{\mbox{sen}x}$;
+  \vspace{0.2cm}
+ \item[(b)] $\displaystyle\lim_{x\rightarrow\infty}\dfrac{(x^{3}+2x)^{2}}{(2x-1)^{3}\cdot(x^{3}-1)}$;
+\vspace{0.2cm}
+ \item[(c)] $\displaystyle\lim_{x\rightarrow\frac{\pi}{2}}\dfrac{\mbox{tg} x-\sec x+\cos x}{\cos x}$.
+\end{enumerate}
+\item Sejam $f$ e $g$ funções contínuas em $\left[-2;5\right]$ tais que $\displaystyle\lim_{x\rightarrow-2^{+}}f(x)=7$, $\displaystyle\lim_{x\rightarrow-2^{+}}g(x)=2$, $\displaystyle\lim_{x\rightarrow5^{-}}f(x)=4$ e $\displaystyle\lim_{x\rightarrow5^{-}}g(x)=5$.
+\begin{enumerate}
+ \item[(a)] Calcule $\displaystyle\lim_{x\rightarrow5^{-}}\dfrac{g^{2}(x)-25}{g(x)-5}$;
+  \vspace{0.2cm}
+ \item[(b)] Calcule $(g-f)(-2)$ e $(g-f)(5)$;
+\vspace{0.2cm}
+ \item[(c)] Use o item (b) e o Teorema do Valor Intermediário para provar que existe $c\in\mathbb R$ tal que $f(c)=g(c)$.
+\end{enumerate}
+\item Ache um número real $b$ de modo que a função 
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+\vspace{0.2cm}
+-\dfrac{3}{2}x+5, &  & x\leq2,\\
+-x^{2}+bx+(1-b), &  & x>2\\
+\end{array}
+\right.
+$$\\
+seja contínua em $x=2$. Para este valor de $b$, $f$ é contínua em $\mathbb R$? Justifique.
+\item Determine as assíntotas horizontais e verticais da função $f(x)=\dfrac{\sqrt{x}+1}{\sqrt{x}-1}$.
+
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª VPA-12 de abril de 2008}
+\indent \par
+
+\begin{enumerate}
+\item Seja $f(x)=1+\mbox{sen}x+\dfrac{\mbox{sen}^{2}x}{2}+\dfrac{\mbox{sen}^{3}x}{3}+\ldots+\dfrac{\mbox{sen}^{10}x}{10}$.
+\begin{enumerate}
+ \item[(a)] Calcule $f'(x)$.
+  \vspace{0.2cm}
+  \item[(b)] Ache $f'(\frac{\pi}{6})$.
+  \vspace{0.2cm}
+  \item[(c)] Existe algum $x\in(0,\frac{\pi}{2})$ tal que $f'(x)=\cos x$?
+\end{enumerate}
+\item Seja
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+\vspace{0.2cm}
+3x^{2}, &  & x\leq1,\\
+ax+b, &  & x>1.\\
+\end{array}
+\right.
+$$\\
+\begin{enumerate}
+ \item[(a)] Encontre uma relação entre $a$ e $b$ de modo que $f$ seja contínua em $x=1$.
+  \vspace{0.2cm}
+  \item[(b)] Use a relação encontrada no item (a) para calcular $a$ e $b$, de modo que $f$ seja diferenciável em $x=1$.
+
+[\footnotesize Sugestão: Calcule as derivadas laterais de $f$ em $x=1$.]
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Ache $y'$ onde $x^{2}-xy+\frac{3}{2}y^{2}=\dfrac{15}{2}$.
+  \vspace{0.2cm}
+  \item[(b)] Onde a reta normal à curva dada no ponto $(-2,1)$ intercepta a curva uma segunda vez?
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Obtenha uma equação da reta tangente ao gráfico de $f(x)=10^{x^{2}+x+1}$ no ponto $(0,10)$.
+  \vspace{0.2cm}
+  \item[(b)] Se $H(x)=e^{[f(x)]^{2}}$ e $f(1)=f'(1)=1$, determine uma equação da reta tangente ao gráfico de $H$ no ponto correspondente a $x=1$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Obtenha uma equação da reta tangente ao gráfico de $f(x)=\mbox{cossec} x+\mbox{cotg} x$ no ponto $x=\frac{\pi}{4}$.
+  \vspace{0.2cm}
+  \item[(b)] Determine a derivada da função $g(x)=\mbox{sen}^{2}(\cos(x^{2}+1))$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{3ª Avaliação-17 de maio de 2008}
+\indent \par
+
+\begin{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Use diferenciação logarítmica para achar a derivada da função $f(x)=x^{\ln x}$.
+  \vspace{0.2cm}
+  \item[(b)] Determine a abscissa do ponto no qual a reta tangente à curva $y=\cosh x$ faz com o eixo-$x$ um ângulo de $\frac{\pi}{4}$ radianos.
+\end{enumerate}
+\item Um homem com 1,8 $m$ de altura caminha em direção a um edifício, com velocidade de 1,5 $m/s$. Se existe um ponto de luz no chão a 15 $m$ do edifício, com que velocidade a sombra do homem no edifício estará diminuindo, quando ele estiver a 9 $m$ do edifício?
+\item \begin{enumerate}
+ \item[(a)] Use diferenciais para estimar (calcular aproximadamente) o número $\sqrt[3]{8,01}$.
+  \vspace{0.2cm}
+  \item[(b)] Seja $g$ derivável em toda a reta $\mathbb R$, crescente em $(0,+\infty)$ e decrescente em $(-\infty,0)$. Determine onde $f(x)=g(x^{2})$ é crescente e onde é decrescente.
+\end{enumerate}
+\item Prove que a função $f(x)=e^{\frac{x^{4}}{4}-6x^{2}+ax}$ tem, no máximo, um ponto crítico no intervalo $(-1,1)$, para qualquer valor de $a$.
+\item \begin{enumerate} \item[(a)] Dada a função $f(x)=-\dfrac{x}{(x-2)^{2}}$, determine:
+\begin{enumerate}
+ \item[(1)] O domínio de $f$;
+  \vspace{0.2cm}
+  \item[(2)] As intersecções com os eixos;
+  \vspace{0.2cm}
+  \item[(3)] As assíntotas, caso existam;
+  \vspace{0.2cm}
+  \item[(4)] Os intervalos de crescimento e decrescimento;
+  \vspace{0.2cm}
+  \item[(5)] Os pontos de inflexão e as concavidades;
+\end{enumerate}
+\item[(b)] Trace o gráfico de $f$.
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{4ª Prova-14 de junho de 2008}
+\indent \par
+
+\begin{enumerate}
+\item Calcule os seguintes limites:
+\begin{enumerate}
+ \item[(a)] $\displaystyle\lim_{x\rightarrow+\infty}\left[\dfrac{x}{x+1}\right]^{x}$;
+  \vspace{0.2cm}
+  \item[(b)] $\displaystyle\lim_{x\rightarrow1}\left[\dfrac{x}{x-1}-\dfrac{1}{\ln x}\right]$.
+\end{enumerate}
+\item Sabendo-se que $f'(x)=3x^{2}$ e que a reta $y=3x$ é tangente ao gráfico de $f$ em algum ponto, encontre $f(x)$. \footnotesize Observação: Você poderá encontrar mais de uma função com essas características.
+\normalsize
+\item Determine os pontos $P$ da circunferência $x^{2}+y^{2}=25$ tais que a soma das distâncias de $P$ aos pontos $A=(-2,0)$ e $B=(2,0)$ seja
+\begin{enumerate}
+ \item[(a)] máxima;
+  \vspace{0.2cm}
+  \item[(b)] mínima.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Calcule a área da região delimitada pelo gráfico da função $f(x)=x-2$, pelo eixo-$x$ e pelas retas $x=1$ e $x=5$. Não precisa usar somas de Riemann.
+  \vspace{0.2cm}
+  \item[(b)] Calcule a integral $\int_{1}^{5}(x-2)dx$.
+  \item[(c)] Usando Somas de Riemann, calcule $\int_{0}^{2}(x-2)dx$.
+\end{enumerate}
+\item Dada a função $f(x)=\dfrac{x^{3}}{1-x^{2}}$, sabe-se que $f'(x)=\dfrac{x^{2}(3-x^{2})}{(1-x^{2})^{2}}$ e que $f''(x)=\dfrac{2x(x^{2}+3)}{(1-x^{2})^{3}}$. Indique os intervalos de crescimento e decrescimento, os pontos críticos de máximo e mínimo, os intervalos onde a concavidade é voltada para cima e os em que ela é voltada para baixo, bem como os pontos de inflexão e as assíntotas, caso existam. Feito isso, trace o gráfico.
+
+\end{enumerate}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reavaliação da 2ª média-21 de junho de 2008}
+\indent \par
+
+\begin{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Suponha que $\displaystyle\lim_{x\rightarrow\infty}f(x)=\displaystyle\lim_{x\rightarrow\infty}f'(x)=\displaystyle\lim_{x\rightarrow\infty}f''(x)=\infty$ \ e \ $\displaystyle\lim_{x\rightarrow\infty}\dfrac{xf'''(x)}{f''(x)}=1$. Calcule $\displaystyle\lim_{x\rightarrow\infty}\dfrac{xf'(x)}{f(x)}$.
+  \vspace{0.2cm}
+  \item[(b)] Determine o valor de $c$ para o qual $\displaystyle\lim_{x\rightarrow\infty}\left(\dfrac{x+c}{x-c}\right)^{x}=4$.
+\end{enumerate}
+\item Use o Cálculo para encontrar os valores máximos e mínimos da função $f(x)=e^{x^{2}-x}$, no intervalo $[0,1]$.
+\item Ache os valores de $a$, $b$ e $c$, tais que a função definida por $f(x)=ax^{2}+bx-c$ tenha um valor máximo igual a 7, quando $x=1$ e de tal sorte que o gráfico passe pelo ponto $(2,-2)$.
+\item Às 13 horas um navio $A$ está a 100 km ao Norte de um navio $B$. O navio $A$ está navegando para o Sul a 20 km/h, enquanto que o navio $B$ está navegando para o Leste a 15 km/h. Determine se os navios estão se aproximando ou afastando às 16 h e com que velocidade isto está ocorrendo.
+\item Determine as dimensões do retângulo de maior área que pode ser inscrito na elise $\dfrac{x^{2}}{4}+\dfrac{y^{2}}{9}=1$.
+
+\end{enumerate}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{VPA 1-12 de setembro de 2008}
+\indent \par
+
+\begin{enumerate}
+\item Seja a função
+
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+\vspace{0.2cm}
+x^{2}, &  & x\leq1,\\
+\vspace{0.2cm}
+cx+k, &  & 1<x<4,\\
+\vspace{0.2cm}
+-2x, &  & x\geq4.\\
+\end{array}
+\right.
+$$
+\begin{enumerate}
+ \item[(a)] Encontre os valores de $c$ e $k$ que tornam a função $f$ contínua nos reais.
+
+ \item[(b)] Esboce o gráfico desta função.
+
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Encontre a derivada da função $f(x)=\dfrac{x^{2}}{x-1}$, usando a definição.
+
+ \item[(b)] Determine uma equação da reta tangente à curva no ponto em que $y=4$.
+
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Determine as assíntotas da curva $f(x)=\dfrac{x-9}{\sqrt[4]{16x^{4}+3x+2}}$.
+  \vspace{0.2cm}
+  \item[(b)] Determine, se existirem, as assíntotas verticais da curva $$y=\dfrac{1}{x^{2}-3x+2}.$$ O gráfico assintota a reta assíntota por ambos os lados? Justifique.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Calcule o limite: $\displaystyle\lim_{x\rightarrow2}\dfrac{|x-2|}{x^{3}-8}$.
+  \vspace{0.2cm}
+  \item[(b)] Usando o teorema do confronto, mostre que $$\lim_{x\rightarrow0^{+}}(\sqrt[3]{x}\cdot2^{\mbox{sen}\frac{\pi}{2}})=0.$$
+\end{enumerate}
+\item A reta tangente à curva $y=\dfrac{1}{x}$ no ponto de abscissa $a$, com $a>0$, e as retas $x=0$ e $y=0$ determinam um triângulo. Calcule sua área.
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{VPA 1-13 de setembro de 2008}
+\indent \par
+
+\begin{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Usando a definição, verifique se a função
+
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+\vspace{0.2cm}
+x^{2}+1, &  & x\leq1,\\
+\vspace{0.2cm}
+-\dfrac{x^{2}}{2}+4, &  & 1<x\leq4,\\
+2, &  & x>4\\
+\end{array}
+\right.
+$$\\
+é contínua nos reais.
+ \item[(b)] Esboce o gráfico desta função para confirmar o resultado do item (a).
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Encontre a derivada da função $f(x)=\dfrac{5-3x}{x-2}$, usando a definição.
+  \vspace{0.2cm}
+  \item[(b)] Determine uma equação da reta tangente a essa curva no ponto $(3,-4)$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Determine as assíntotas da curva $h(x)=\dfrac{x}{\sqrt{x^{2}+1}}$.
+ \vspace{0.2cm}
+ \item[(b)] Calcule o limite: $\displaystyle\lim_{x\rightarrow\infty}(\sqrt{x^{2}+x}-\sqrt{x^{2}-x})$.
+\end{enumerate}
+\item Calcule os limites:
+\begin{enumerate}
+ \item[(a)] $\displaystyle\lim_{x\rightarrow a}\dfrac{x^{2}-a^{2}}{|x-a|}$.
+ \vspace{0.2cm}
+ \item[(b)] $\displaystyle\lim_{x\rightarrow2}\dfrac{\sqrt{6-x}-2}{\sqrt{3-x}-1}$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Se $|g(x)+4|<2(3-x)^{4}$ para todo $x$ real, calcule $\displaystyle\lim_{x\rightarrow3}g(x)$.
+  \vspace{0.2cm}
+  \item[(b)] Determine as assíntotas verticais da curva $h(x)=\dfrac{1}{x^{2}+5x+6}$.
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª Prova-03 de outubro de 2008}
+\indent \par
+
+\begin{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Ache a derivada da função $f(x)=\ln |\cos\sec(3x)\mbox{cotg}(3x)|$.
+  \vspace{0.2cm}
+  \item[(b)] Encontre uma equação da reta tangente à curva $x\:\mbox{sen}y+\cos 2y=\mbox{sen} x$, no ponto $(0,\pi/4)$.
+\end{enumerate}
+\item Usando diferenciação logarítmica, calcule $f'(0)$, sendo $f(x)=\dfrac{\sqrt{x+1}(2-x)^{5}}{(x+3)^{4}}$.
+\item \begin{enumerate}
+ \item[(a)] Sendo $y=\log_{3}(\log_{2}x)$, calcule $f'(2)$.
+  \vspace{0.2cm}
+  \item[(b)] Determine $\dfrac{dy}{dx}$, se $y=|x|^{e^{x^{2}}}$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Onde a reta tangente à curva $y=\mbox{senh}(x)$ possui inclinação 1?
+  \vspace{0.2cm}
+  \item[(b)] Se $f(x)=2^{\mbox{arctg} x^{2}}$, calcule $f'(1)$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Seja $f(x)=a\mbox{sen} x+b\cos x+c\mbox{tg} x$ tal que $f(0)=2$, $f'(\pi)=0$ e $f''(\pi/6)=4$. Calcule $a$, $b$ e $c$.
+  \vspace{0.2cm}
+  \item[(b)] Calcule $\displaystyle\lim_{x\rightarrow1}\dfrac{\mbox{sen}(x-1)}{x^{2}+x-2}$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª Avaliação-04 de outubro de 2008}
+\indent \par
+
+\begin{enumerate}
+\item Usando a diferenciação logarítmica, derive $$y=\dfrac{\cos^{2}x\cdot\mbox{tg}^{4}x}{(e^{2x}+1)^{3}}.$$
+\item Sabendo que a equação $x^{2}y^{2}+xy=2$ define implicitamente $y$ como função de $x$, pergunta-se: Existe algum ponto sobre a curva no qual a reta tangente é paralela à reta $y=5$?
+\item \begin{enumerate}
+ \item[(a)] Determine a equação da reta tangente à curva $y=3^{\cos(2x)}$, no ponto em que $y=1$, com $0\leq x\leq\pi/2$.
+  \vspace{0.2cm}
+  \item[(b)] Seja $y=(\ln x)^{\mbox{sen}(2x)}$. Determine $\dfrac{dy}{dx}$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Se $y=\mbox{arc\:sen}(\sqrt{1-x^{2}})$, determine $\dfrac{dy}{dx}$, sendo $0<x<1$. 
+  \vspace{0.2cm}
+  \item[(b)] Se $f(x)=\dfrac{\log_{\pi}x}{x^{2}}$, determine $f'(1)$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Sendo $y=x\:\mbox{tgh}(\sqrt{x})$, determine a equação da reta normal a essa curva no ponto $(0,0)$.
+
+Observação: A reta normal à curva $C$ em um ponto $P$ é, por definição, a reta que passa por $P$ e é perpendicular à reta tangente a $C$ em $P$.
+  \vspace{0.2cm}
+  \item[(b)] Se $f(x)=\arccos\left(x-\dfrac{x^{3}}{3}\right)$, determine $f''(1/2)$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{3ª Prova-01 de novembro de 2008}
+\indent \par
+
+\begin{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Ache uma linearização para a função $f(x)=\dfrac{1}{\sqrt[3]{x+1}}$, em torno de $a=7$.
+  \vspace{0.2cm}
+  \item[(b)] Aproxime $\ln(1,08)$, por diferenciais.
+\end{enumerate}
+\item Dada a função $f(x)=2\mbox{sen}x+\cos(2x)$, com $-\pi\leq x\leq\pi$, determine:
+\begin{enumerate}
+ \item[(a)] os números críticos de $f$;
+  \vspace{0.2cm}
+  \item[(b)] os valores máximos e mínimos absolutos de $f$, no intervalo dado.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Dada a função $f(x)=\dfrac{x+3}{x-2}$, mostre que não existe $c\in[0,5]$ tal que $f'(c)=\dfrac{f(5)-f(0)}{5-0}$. Por quê este fato não contradiz o Teorema do Valor Médio?
+  \vspace{0.2cm}
+  \item[(b)] Mostre que a função $f(x)=x^{3}+9x^{2}+33x-8$ possui exatamente uma raiz real.
+\end{enumerate}
+\item Uma partícula move-se ao longo da curva $y=\sqrt{1+x^{3}}$. Quando ela atinge o ponto de ordenada 3, a coordenada $y$ está crescendo a uma taxa de 4 m/s. Quão rápido está variando a coordenada $x$ do ponto nesse instante?
+\item A que razão está mudando o volume de uma esfera no instante em que a área de sua superfície está aumentando à razão de 4 $cm^{2}/min$ e o raio está aumentando à razão de 0,1 cm/min?
+
+\end{enumerate}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reposição da 1ª Média-13 de dezembro de 2008}
+\indent \par
+
+\begin{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Obtenha a equação da reta normal à curva $y=e^{\cosh x}$ no ponto em que $y=e$.
+  \vspace{0.2cm}
+  \item[(b)] Encontre as assíntotas horizontais e verticais da curva $y=\dfrac{\sqrt{3x^{2}+2}}{4x-3}$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Dada a função $f(x)=x\cdot |x|$, para que valores de $x$ a função $f$ é diferenciável?
+  \vspace{0.2cm}
+  \item[(b)] Calcule $\displaystyle\lim_{x\rightarrow+\infty}(\sqrt{x^{2}+25x}-x)$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Ache uma relação entre $a$ e $b$ de modo que a função
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+ax+b, &  & x<2,\\
+2x^{2}-1, &  & x\geq2\\
+\end{array}
+\right.
+$$\\
+seja contínua em $x=2$.
+  \vspace{0.2cm}
+  \item[(b)] Depois de respondido o item (a), encontre valores de $a$ e $b$ para que a função $f$ seja derivável em $x=2$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Encontre a reta tangente à curva $x^{3}+y^{3}=6xy$ no ponto $(3,3)$.
+  \vspace{0.2cm}
+  \item[(b)] Em quais pontos sobre a curva acima a reta tangente é horizontal?
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Sendo $y=\mbox{sen}(\mbox{tg}\sqrt{\mbox{sen}x})$, calcule $y'$.
+  \vspace{0.2cm}
+  \item[(b)] Se $f(x)=2^{3^{x^{2}}}$, determine $f'(1)$.
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reavaliação da 2ª média-13 de dezembro de 2008}
+\indent \par
+
+\begin{enumerate}
+\item Um retângulo está inscrito em um círculo de 5 cm de raio. Se o comprimento do retângulo está diminuindo à razão de 2 cm por segundo, com que rapidez a área está variando, no instante em que o comprimento do retângulo for de 6 cm?
+\item Encontre as dimensões e o volume do cone reto invertido, de maior volume, inscrito em um cone reto de altura $H$ e raio da base $R$, estando o vértice do cone invertido no centro da base do cone maior.
+\item \begin{enumerate}
+ \item[(a)] Usando a definição de integral definida, mostre que $\displaystyle\int_{a}^{b}(x+5)dx=\dfrac{b^{2}-a^{2}}{2}+5(b-a)$.
+  \vspace{0.2cm}
+  \item[(b)] Prove que $f(x)=x^{3}-x^{2}+x-1$ tem uma única raiz real.
+\end{enumerate}
+\item Esboce o gráfico da função $f(x)=\dfrac{x^{3}}{(x-1)^{2}}$, depois de desenvolver os procedimentos necessários, tais como limites e derivadas.
+\item Determine:
+\begin{enumerate}
+ \item[(a)] $\displaystyle\lim_{x\rightarrow0}(2x+1)^{1/\mbox{sen}x+x^{2}}$
+  \vspace{0.2cm}
+  \item[(b)] $f(x)$, onde $f''(x)=-\pi+x^{2/3}+2\cos x-e^{x}$, $f'(0)=1$ e $f(0)=e$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Prova Final-18 de dezembro de 2008}
+\indent \par
+
+\begin{enumerate}
+\item Considere um trapézio retângulo cuja base menor tem 2 cm. A altura do trapézio cresce a uma taxa de 1 cm/min, enquanto que sua área cresce a uma taxa de 6 $cm^{2}/min$. A que taxa está variando a base maior do trapézio, quando sua altura é de 10 cm e a área de 50 $cm^{2}$?
+\item \begin{enumerate}
+ \item[(a)] Estude a continuidade, nos reais, da função
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+\ln(x+1), &  & x\geq0\\
+\ln(1-x^{2}), &  & -1<x<0\\
+\dfrac{1}{1+x^{2}}, &  & x\leq-1.\\
+\end{array}
+\right.
+$$\\
+  \vspace{0.2cm}
+  \item[(b)] Prove que $f(x)=\mbox{tg}x-\mbox{cotg}x-x$ tem uma única raiz no intervalo $(0,\pi/2)$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Calcule $f'(\frac{\pi^{2}}{16})$, onde $f(x)=\sqrt{\sec\sqrt{x}}$.
+  \vspace{0.2cm}
+  \item[(b)] Dada a função $f(x)=2^{\mbox{arctg}(\mbox{senh}x)}$, determine $f'(0)$.
+\end{enumerate}
+\item Sendo $f(x)=\left(\dfrac{x}{\cos x}\right)^{x}$, calcule:
+\begin{enumerate}
+ \item[(a)] $f'(x)$;
+  \vspace{0.2cm}
+  \item[(b)] $\displaystyle\lim_{x\rightarrow0}f(x)$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Encontre a equação da reta tangente à curva $x^{2}(x^{2}-9)=y^{2}(y^{2}-1)$ no ponto $(-3,1)$.
+  \vspace{0.2cm}
+  \item[(b)] Existe algum ponto da curva $y=(\ln x)^{3}$ onde a segunda derivada vale zero? Se existir, identifique-os.
+\end{enumerate}
+\item Existe algum ponto onde a função $f(x)=3x-x^{2}+|2x-4|$ não é diferenciável?
+
+Ache a derivada de $f$ nos pontos onde ela é diferenciável.
+\item Um fazendeiro deseja cercar um lote retangular de 1800 $m^{2}$. Deseja também construir duas cercas divisórias internas, paralelas a dois dos lados da cerca externa. Qual é o comprimento total mínimo da cerca que o projeto exige?
+
+Certifique-se de que dua resposta dá o mínimo absoluto.
+\item \begin{enumerate}
+ \item[(a)] Sabemos que se $f$ é contínua em $[a,b]$ e se $m\leq f(x)\leq M$, então $$m(b-a)\leq\int_{a}^{b}f(x)dx\leq M(b-a).$$ Com base nessa propriedade, mostre que $2\leq\displaystyle\int_{-1}^{1}\sqrt{1+x^{2}}dx\leq 2\sqrt{2}$.
+  \vspace{0.2cm}
+  \item[(b)] Determine $f(x)$, onde $f'(x)=\dfrac{1}{\sqrt{1-x^{2}}}+\dfrac{1}{x}-2\mbox{sen} x$ e $f(1)=0$.
+\end{enumerate}
+\item Um cilindro circular reto tem 6 m de raio e 10 m de altura. Se o raio tiver uma variação, para mais, de 2 cm, use diferenciais para estimar de quanto variará seu volume.
+\item Depois de fazer as análises necessárias, esboce o gráfico da função $f(x)=\dfrac{(x+1)^{2}}{x^{2}+1}$.
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\normalsize
+
+\chapter{2009} 
+\indent \par 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{1ª Avaliação-21 de março de 2009}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+ \item[(a)] Dada a função
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+kx-3, &  & x\leq -1,\\
+x^{2}+k, &  & x>-1,\\
+\end{array}
+\right.
+$$\\
+ache o valor de $k$ para que exista $\displaystyle\lim_{x\rightarrow-1}f(x)$.
+  \vspace{0.2cm}
+  \item[(b)] Calcule $\displaystyle\lim_{x\rightarrow0}\dfrac{|2x-1|-|2x+1|}{x}$.
+\end{enumerate}
+\item Dada a função $f(x)=\dfrac{x^{3}+7x^{2}+12x}{x^{2}+2x-3}$,
+\begin{enumerate}
+ \item[(a)] analise a continuidade de $f$ em $\mathbb R$;
+  \vspace{0.2cm}
+  \item[(b)] calcule os limites laterais em torno dos pontos de descontinuidade para verificar se a curva possui, ou não, assíntotas verticais. Em caso afirmativo, escreva as equações das assíntotas.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Usando o Teorema do Confronto, mostre que $\displaystyle\lim_{x\rightarrow0}\sqrt[3]{x}\:2^{\cos \frac{\pi}{x}}=0$.
+  \vspace{0.2cm}
+  \item[(b)] Calcule $\displaystyle\lim_{x\rightarrow16}\dfrac{16-x}{4-\sqrt{x}}$.
+\end{enumerate}
+\item Dada a função
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+x+2c, &  & x<-2,\\
+3cx+k, &  & -2\leq x\leq1,\\
+3x-2k, &  & x>1,\\
+\end{array}
+\right.
+$$\\
+ache os valores de $c$ e $k$, de modo que ela seja contínua em -2 e em 1. Para os valores de $c$ e $k$ encontrados, a função é contínua em todos os reais?
+\item \begin{enumerate}
+ \item[(a)] Mostre que a função $f(x)=\sqrt{4-x^{2}}$ é contínua no intervalo fechado $[-2,2]$.
+  \vspace{0.2cm}
+  \item[(b)] Se $f(x)=x^{3}-5x^{2}+7x-9$, use o Teorema do Valor Intermediário para provar que existe um número real tal que $f(x)=100$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª Avaliação-17 de abril de 2009}
+\indent \par
+
+\begin{enumerate}
+
+\item Deve-se drenar uma piscina para limpeza. Se $Q$ representa o número de litros dágua na piscina $t$ minutos após o início da drenagem, e $Q=200(30-k)^{2}$, use a definição de derivada para calcular a velocidade de escoamento da água em $t=10$ min.
+
+Qual é a velocidade média de escoamento durante os 10 primeiro minutos?
+\item Determine a equação da reta tangente à curva dada pela equação $xy^{2}+\sqrt{xy}=2$, no ponto de ordenada igual a 1.
+\item Ache as equações das retas tangentes ao gráfico de $f(x)=x^{2}+1$ que passam pelo ponto $(1,1)$.
+\item A reta normal a uma curva $C$ em um ponto $P$ é, por definição, a reta que passa por $P$ e é perpendicular à reta tangente a $C$ em $P$. Obtenha a equação da reta normal à curva $f(x)=2^{\mbox{tg}(\mbox{sen}x^{3})}$ no ponto de ordenada 1.
+\item Em quais números a seguinte função é derivável?
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+-1-2x, &  & x<-1,\\
+x^{2}, &  & -1\leq x\leq1,\\
+x, &  & x>1,\\
+\end{array}
+\right.
+$$\\
+Dê uma expressão para a função $f'$.
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª Avaliação-18 de abril de 2009}
+\indent \par
+
+\begin{enumerate}
+
+\item Determine as assíntotas horizontais do gráfico de $f(x)=\dfrac{\sqrt{3x^{2}+2}}{4x+6}$.
+\item Obtenha a reta tangente à curva dada pela equação $\cos(x+y)=y$, no ponto $P=(\pi/2,0)$.
+\item Determine o valor de $a$ para que a função
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+ax-9, &  & x<2\\
+2x^{2}-1, &  & x\geq 2\\
+\end{array}
+\right.
+$$\\
+seja derivável em $x=2$.
+\item \begin{enumerate}
+ \item[(a)] Mostre que $\dfrac{d}{dx}\left[\sqrt{\dfrac{1+\mbox{sen}x}{1-\mbox{sen}x}}\right]=\dfrac{1}{1-\mbox{sen}x}$, sendo que $x\in(0,\pi/2)$.
+  \vspace{0.2cm}
+  \item[(b)] Se $f(x)=e^{\mbox{tg}\sqrt{\mbox{sen}x}}$, determine $f'(x)$.
+\end{enumerate}
+\item Um objeto anda em linha reta e sua posição no instante $t$ vem dada pela função $s(t)=\dfrac{2-t}{2+t}$. Calcule a velocidade desse objeto em um instante $t$ arbitrário, usando para isto a definição de derivada.
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{3ª Avaliação-16 de maio de 2009}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+ \item[(a)] Encontre uma expressão para a variação da superfície total de um cone circular reto quando o raio permanece constante e a altura sofre uma pequena variação $\Delta h$.
+
+\footnotesize[Fórmula para a área total do cone: $S=\pi R^{2}+\pi R g$]
+\normalsize
+  \vspace{0.2cm}
+  \item[(b)] Encontre os valores máximos e mínimos locais e absolutos de
+$$f(x)=
+\left\{
+\begin{array}{ccccccc}
+x^{2}, &  & -1\leq x<0\\
+2-x^{2}, &  & 0\leq x\leq 1.\\
+\end{array}
+\right.
+$$\\
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Calcule a seguinte derivada: $\dfrac{d}{dx}\left(\sqrt{a^{2}-x^{2}}+a\cdot\mbox{arcsen}\left(\dfrac{x}{a}\right)\right)$.
+  \vspace{0.2cm}
+  \item[(b)] Sendo $f(x)=x^{\mbox{senh}(x^{2})}$, determine $f'(x)$.
+\end{enumerate}
+\item \begin{enumerate}
+ \item[(a)] Use diferenciação logarítmica para calcular a derivada de $y=\dfrac{\sqrt[3]{x+1}}{(x+2)\sqrt{x+3}}$.
+  \vspace{0.2cm}
+  \item[(b)] Sendo $f(x)=\log_{3}(x^{2}-\mbox{sen}x)$, determine $f'(\pi/2)$.
+\end{enumerate}
+\item Uma bola de ferro, esférica, com 8 cm de diâmetro, está coberta com uma camada de gelo de espessura uniforme. Se o gelo derrete com uma taxa de 10 $cm^{3}/min$, a que taxa a espessura do gelo diminuirá quando a espessura da mesma for de 2 cm?
+\item \begin{enumerate}
+ \item[(a)] Mostre que 5 é um número crítico da função $f(x)=2+(x-5)^{3}$, mas que $g(5)$ não é máximo nem mínimo local.
+  \vspace{0.2cm}
+  \item[(b)] Encontre os valores máximos e mínimos absolutos da função $f(x)=(x^{2}-2)^{2/3}$, no intervalo $[-1,2]$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\normalsize
+
+\chapter{2010} 
+\indent \par 
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{1ª Prova-03 de setembro de 2010}
+\indent \par
+
+
+
+
+\begin{enumerate}
+
+\item Calcule, se existirem, os seguintes limites:
+\begin{enumerate}
+\item[(a)] $\displaystyle\lim_{x\rightarrow3^{+}}\dfrac{5x^{3}-135}{(x-3)^{4}}$;
+\vspace{0.2cm}
+\item[(b)] $\displaystyle\lim_{x\rightarrow16}\dfrac{\sqrt{x}-4}{x^{\frac{1}{4}}-2}$.
+\end{enumerate}
+
+\item Encontre, caso existam, as assíntotas horizontais e verticais da curva $$y=\frac{x^{3}+2x^{2}+x}{(x^{2}+4x+3)(x^{2}-9)}.$$
+
+\item Analise a continuidade da função $f(x)=\dfrac{2x^{2}+5x-3}{x^{2}-2x-15}$ e indique os tipos de descontinuidades encontradas.
+
+\item Ache todos os pontos sobre o gráfico de $g(x)=1-x^{2}$ nos quais a reta tangente passa pelo ponto $(2,0)$. Não utilize propriedades de derivadas para obter as inclinações das retas tangentes.
+
+\item \begin{enumerate}
+\item[(a)] Calcule a função derivada de $f(x)=\sqrt{x^{2}-1}$ e determine seu domínio.
+\vspace{0.2cm}
+\item[(b)] Existe algum número real que elevado ao quadrado dê seu cubo mais cinco?
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{1ª Prova-04 de setembro de 2010}
+\indent \par
+
+
+\begin{enumerate}
+
+\item Calcule os seguintes limites:
+\begin{enumerate}
+\item[(a)] $\displaystyle\lim_{x\rightarrow0}\left(\dfrac{1}{x\sqrt{x+1}}-\dfrac{1}{x}\right)$;
+\vspace{0.2cm}
+\item[(b)] $\displaystyle\lim_{x\rightarrow8}\dfrac{x-8}{\sqrt[3]{x}-2}$.
+\end{enumerate}
+
+\item Determine, se existirem, as assíntotas horizontais e verticais da curva $y=\dfrac{x}{\sqrt{x^{2}+x-12}}$.
+
+\item Encontre os valores de $a$ e $b$ para que a função $f$ seja contínua em $\mathbb R$.
+
+$$f(x)=
+\left\{
+\begin{array}{cclllll}
+\vspace{0.2cm}
+x^{2}+ax+b, &  & x\leq2,\\
+\vspace{0.2cm}
+\dfrac{2x^{2}+4x-16}{x^{2}-x-2}, &  & 2<x<5,\\
+bx+2a+1, &  & x\geq5.\\
+\end{array}
+\right.
+$$\\
+
+\item \begin{enumerate}
+\item[(a)] Calcule os coeficientes angulares das retas tangentes às curvas $f(x)=\dfrac{1}{x}$ e $g(x)=x^{2}$, no ponto de interseção dos gráficos destas curvas. Qual o ângulo entre estas retas?
+\vspace{0.2cm}
+\item[(b)] Enuncie o Teorema do Valor Intermediário.
+\end{enumerate}
+
+\item Verifique quais os intervalos reais em que a função $f(x)=|x^{2}-4|$ é diferenciável. Use a definição de derivada para calcular $f'(x)$.
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª Avaliação-07 de outubro de 2010}
+\indent \par
+
+
+
+
+\begin{enumerate}
+
+\item Determine a área do triângulo formado pelo eixo-$x$ e pelas retas tangentes ao círculo $x^{2}+y^{2}=2$ nos pontos de intersecção do círculo com a parábola de equação $y=x^{2}$.
+
+\item \begin{enumerate}
+\item[(a)] Se $f(x)=\dfrac{e^{5x+2}}{\mbox{tg}\left(2x+\dfrac{\pi}{4}\right)}$, encontre o coeficiente angular da reta tangente a $f$ no ponto em que $x=0$.
+\vspace{0.2cm}
+\item[(b)] Calcule $\displaystyle\lim_{x\rightarrow0}(1-2x)^{\frac{1}{x}}.$ \textbf{Sugestão:} Tome $t=-2x$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Ache $f'(1)$ sabendo que $f(x)=x^{\ln h(x)}$, $x>0$, e que $h(1)=e$.
+\vspace{0.2cm}
+\item[(b)] Mostre que $f^{(n)}(x)=\dfrac{(-1)^{n}n!}{x^{n+1}}$ para $f(x)=\dfrac{1}{x}$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Obtenha a equação da reta tangente à curva $y=\mbox{arccotg}(2^{x})$ no ponto de abscissa nula.
+\vspace{0.2cm}
+\item[(b)] Estabeleça o valor de $m$ para o qual a função $y=\cos 3x$ satisfaz a equação $y^{(4)}+my=0$, para todo $x\in\mathbb R$.
+\end{enumerate}
+
+\item Calcule:
+\begin{enumerate}
+\item[(a)] $\displaystyle\lim_{x\rightarrow1}\dfrac{\mbox{sen}(x^{3}-1)}{x-1}$;
+\vspace{0.2cm}
+\item[(b)] $\displaystyle\lim_{t\rightarrow0^{+}}\dfrac{\cos t^{2}-1}{t}$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª Avaliação-09 de outubro de 2010}
+\indent \par
+
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Calcule $\displaystyle\lim_{x\rightarrow1}\dfrac{\mbox{sen}(\ln x)}{\ln x^{2}}$.
+\vspace{0.2cm}
+\item[(b)] Calcule $f'(x)$, se $f(x)=\pi^{x.\small\mbox{tg}x}$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Encontre todos os pontos da curva $x^{2}+y^{2}=4$ onde as retas tangentes são paralelas à reta de equação $x+y=2$.
+\vspace{0.2cm}
+\item[(b)] Determine uma equação da reta normal à curva $x^{2}-\log^{2}(y+1)=0$ no ponto $(1,9)$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Sendo $f(x)=(x^{2}+1)^{\cos x}$, determine $f'(x)$.
+\vspace{0.2cm}
+\item[(b)] Se $f(x)=e^{2x}$, mostre que $f(0)+f'(0)+f''(0)+\ldots+f^{(n)}(0)=2^{n+1}-1$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Se $f$ é uma função invertível, definimos sua inversa como sendo a função $f^{-1}$ tal que $(f^{-1}\circ f)(x)=x$, isto é, $f(x)=y\Leftrightarrow f^{-1}(y)=x$.
+
+Supondo $f$ diferenciável e $f'(x)\neq0$, aplique a Regra da Cadeia (ou derivação implícita) para mostrar que $[f^{-1}(y)]'=\dfrac{1}{f'(x)}$.
+\vspace{0.2cm}
+\item[(b)] Calcule a derivada da função $f(x)=\sqrt[3]{x-1}$, usando a fórmula do item anterior.
+\end{enumerate}
+
+\item A reta tangente à curva $y=e^{-\small\mbox{arctg}x}$, no ponto em que $x=a$, intercepta o eixo-$x$. Se a abscissa desse ponto de intersecção com o eixo-$x$ é $b$, mostre que $b=a^{2}+a+1$.
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{3ª Avaliação-12 de novembro de 2010}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Calcule uma equação para a reta normal ao gráfico de $y=e^{\small\mbox{tgh(3x)}}$ em $x=0$ e determine a intersecção dessa reta com o eixo-$x$.
+\vspace{0.2cm}
+\item[(b)] Usando o Teorema de Rolle, mostre que a função $f(x)=\mbox{senh}(x)$ não pode possuir mais de uma raiz real.
+\end{enumerate}
+
+\item A área de um círculo decresce a uma taxa de $1 m^{2}/s$. Determine a taxa de variação da área do quadrado inscrito neste círculo.
+
+\item \begin{enumerate}
+\item[(a)] Enuncie o Teorema do Valor Médio.
+\vspace{0.2cm}
+\item[(b)] Mostre que $2\mbox{arcsen}(x)-\arccos(1-2x^{2})=0$, para todo $x$ tal que $|x|\leq1$.
+\end{enumerate}
+
+\item Determine os valores máximos e mínimos absolutos e locais da função $f(x)=|x^{2}-8x+12|$, no intervalo $[0,5]$.
+
+\item O raio de uma esfera é de 20cm. Estimar, através de diferenciais, o valor do volume com que fica a esfera ao aplicarmos uma camada de tinta de 0,1cm.
+
+\end{enumerate}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{3ª Avaliação-13 de novembro de 2010}
+\indent \par
+
+\begin{enumerate}
+
+\item Um corredor treina em uma pista em forma de elipse, com equação $\dfrac{x^{2}}{16}+\dfrac{y^{2}}{9}=1$. Ele parte do ponto da curva de coordenadas $(0,3)$, no sentido horário. Após certo tempo, o ângulo formado pela direção positiva do eixo-$y$ e pela reta que passa por ele e pela origem é de $\dfrac{\pi}{4}$ radianos. Nesse instante, a distância do corredor ao eixo-$y$ está aumentando a uma taxa de 16m/s. De quanto está variando a distância dele ao eixo-$x$?
+
+\item \begin{enumerate}
+\item[(a)] Ache a abscissa do ponto de intersecção das curvas $f(x)=\cosh x$ e $g(x)=\mbox{senh}(2x)$.
+\vspace{0.2cm}
+\item[(b)] Existe algum número $c\in (1,2)$ tal que a reta tangente a $y=\ln x$ em $c$ seja paralela à reta secante que passa pelos pontos $(1,0)$ e $(e,1)$?
+\end{enumerate}
+
+\item Determine os valores máximos e mínimos absolutos e locais da função $f(x)=2\mbox{sen}x+\cos(2x)$, no intervalo onde $|x|\leq\pi$.
+
+\item \begin{enumerate}
+\item[(a)] Um engenheiro precisa encontrar o valor de $\sqrt[10]{e}$. Como ele não tem calculadora, precisará usar diferenciais (aproximações lineares) para estimar esse valor. Você poderia ajudá-lo?
+\vspace{0.2cm}
+\item[(b)] Calcule a derivada da função $f(x)=e^{\mbox{senh}(x^{2}-1)}$ em $x=1$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Enuncie o Teorema de Rolle;
+\vspace{0.2cm}
+\item[(b)] Seja 
+$$f(x)=
+\left\{
+\begin{array}{cclllll}
+\vspace{0.2cm}
+\mbox{sen}x, &  & \mbox{se} \ \ 0\leq x\leq\dfrac{\pi}{2},\\
+-\dfrac{2}{\pi}x+2, &  & \mbox{se} \ \ \dfrac{\pi}{2}<x\leq\pi.\\
+\end{array}
+\right.
+$$\\
+Mostre que $f(0)=f(\pi)$ e que não existe $c\in(0,\pi)$ tal que $f'(c)=0$. Por que isso não contradiz o Teorema de Rolle?
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{4ª Avaliação-10 de dezembro de 2010}
+\indent \par
+
+\begin{enumerate}
+
+\item Calcule os seguintes limites:
+\begin{enumerate}
+\item[(a)] $\displaystyle\lim_{x\rightarrow0}(\cos x)^{1/x^{2}}$;
+\vspace{0.2cm}
+\item[(b)] $\displaystyle\lim_{x\rightarrow1}\dfrac{\ln[\cos(x-1)]}{1-\mbox{sen}\left(\dfrac{\pi}{2}x\right)}$.
+\end{enumerate}
+
+\item Uma cartolina branca tem uma área de $900cm^{2}$. Queremos imprimir um texto sobre ela, deixando margens de 3cm na base inferior e nas laterais e uma margem de 5cm na base superior. Quais as dimensões da cartolina que darão a maior área impressa?
+
+\item Seja $f(x)=\dfrac{x^{2}}{x^{2}-4}+1$. Sabendo que $f'(x)=\dfrac{-8x}{(x^{2}-4)^{2}}$ e que $f''(x)=\dfrac{24x^{2}+32}{(x^{2}-4)^{3}}$, determinar:
+\begin{enumerate}
+\item[(a)] As intersecções com os eixos coordenados.
+\vspace{0.2cm}
+\item[(b)] As assíntotas que existirem.
+\vspace{0.2cm}
+\item[(c)] Os intervalos de crescimento e decrescimento.
+\vspace{0.2cm}
+\item[(d)] Os valores máximos e mínimos locais de $f$.
+\vspace{0.2cm}
+\item[(e)] Os intervalos onde $f$ é côncava para cima, os intervalos onde $f$ é côncava para baixo e seus pontos de inflexão.
+\vspace{0.2cm}
+\item[(f)] Esboce a curva usando as informações dos itens anteriores.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Para quais valores de $a$ e $b$ a função $f(x)=axe^{bx^{2}}$ tem, em $x=2$, o valor máximo $f(2)=1$?
+\vspace{0.2cm}
+\item[(b)] Ache a área máxima de um triângulo cujo comprimento da base mais a altura é 2cm.
+\end{enumerate}
+
+%\item O gráfico da primeira derivada $f'$ de uma função $f$ está mostrado abaixo. Determine os intervalos onde $f$ está crescendo, os valores de $x$ onde $f$ tem um máximo ou mínimo local, os intervalos onde $f$ é côncavo para cima ou para baixo e as abscissas dos pontos de inflexão de $f$. Justifique suas respostas.
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{4ª Avaliação-11 de dezembro de 2010}
+\indent \par
+
+\begin{enumerate}
+
+\item Calcule os seguintes limites:
+\begin{enumerate}
+\item[(a)] $\displaystyle\lim_{x\rightarrow0^{+}}(e^{x}+x)^{1/x}$;
+\vspace{0.2cm}
+\item[(b)] $\displaystyle\lim_{x\rightarrow\infty}\left(\sqrt{x^{2}+x+1}-x\right)$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Mostre que a função $f(x)=x|x|$ tem um ponto de inflexão de $(0,0)$, mas $f''(0)$ não existe.
+\vspace{0.2cm}
+\item[(b)] Determine o ponto da curva $y=\sqrt{x}$ que está mais próximo de $(1,0)$.
+\end{enumerate}
+
+\item Um pedaço de fio com 10m de comprimento é cortado em duas partes. Uma parte é dobrada no formato de um quadrado, ao passo que a outra é dobrada na forma de um triângulo equilátero. Como deve ser cortado o fio de forma que a área total englobada seja: (a) máxima? (b) mínima?
+
+\item Seja $f(x)=\dfrac{x^{3}}{(x-1)^{2}}$. Sabendo que $f'(x)=\dfrac{x^{3}-3x^{2}}{(x-1)^{3}}$ e que $f''(x)=\dfrac{6x}{(x-1)^{4}}$, determinar:
+\begin{enumerate}
+\item[(a)] As intersecções com os eixos coordenados.
+\vspace{0.2cm}
+\item[(b)] As assíntotas que existirem.
+\vspace{0.2cm}
+\item[(c)] Os intervalos de crescimento e decrescimento.
+\vspace{0.2cm}
+\item[(d)] Os valores máximos e mínimos locais de $f$.
+\vspace{0.2cm}
+\item[(e)] Os intervalos onde $f$ é côncava para cima, os intervalos onde $f$ é côncava para baixo e seus pontos de inflexão.
+\vspace{0.2cm}
+\item[(f)] Esboce a curva usando as informações dos itens anteriores.
+\end{enumerate}
+
+%\item A figura abaixo é o gráfico da derivada segunda de $f$. Indique as abscissas dos pontos de inflexão de $f$, os intervalos onde a concavidade de $f$ é voltada para cima ou para baixo, onde $f'$ é crescente e onde é decrescente, bem como as abscissas dos pontos de máximo e mínimos relativos de $f'$. Justifique suas respostas.
+
+\end{enumerate}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reavaliação AB1-17 de dezembro de 2010}
+\indent \par
+
+\begin{enumerate}
+
+\item Sem usar a Regra de L'Hôspital, calcule os seguintes limites:
+\begin{enumerate}
+\item[(a)] $\displaystyle\lim_{x\rightarrow1}\dfrac{\dfrac{1}{\sqrt{x}}-1}{1-x}$;
+\vspace{0.2cm}
+\item[(b)] $\displaystyle\lim_{x\rightarrow0}\dfrac{\sqrt[3]{5+x}-\sqrt[3]{5}}{x}$.
+\end{enumerate}
+
+\item Determine $a$ e $b$  de tal modo que $f$ seja contínua em todos os reais, onde
+$$f(x)=
+\left\{
+\begin{array}{cclllll}
+\vspace{0.2cm}
+3x, &  & \mbox{se} \ \ x\leq2,\\
+\vspace{0.2cm}
+ax+b, &  & \mbox{se} \ \ 2<x<5,\\
+-6x, &  & \mbox{se} \ \ x\geq5.\\
+\end{array}
+\right.
+$$\\
+
+\item \begin{enumerate}
+\item[(a)] Se $f(x)=
+\left\{
+\begin{array}{cclllll}
+\vspace{0.2cm}
+x^{2}, &  & \mbox{se} \ \ x\leq1\\
+\vspace{0.2cm}
+2x-1, &  & \mbox{se} \ \ x>1,\\
+\end{array}
+\right.
+$
+ache $f'(x)$ e $f''(x)$.
+\vspace{0.2cm}
+\item[(b)] Sejam $f(x)=e^{\mbox{tg}(g(x))}$, $g(0)=0$ e $g'(0)=3$. Determine $f'(0)$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Se $g(x)=f^{-1}(x)$, nós sabemos que $g'(f(x))=\dfrac{1}{f'(x)}$. Lembra-se? Então, sendo $f(x)=x^{5}+3x^{3}-1$, calcule $g'(-5)$. Se esta informação puder lhe ajudar, use-a: -1 é raiz da equação $x^{5}+3x^{3}+4=0$.
+\vspace{0.2cm}
+\item[(b)] Sendo $f(x)=(\sec x)^{\frac{\cos x^{2}-1}{x^{3}+1}}$, determine $f'(0)$.
+\end{enumerate}
+
+\item Determine as assíntotas horizontais do gráfico de $f(x)=\dfrac{x-3}{\sqrt{x^{2}-x-6}}$.
+
+\end{enumerate}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reavaliação AB2-17 de dezembro de 2010}
+\indent \par
+
+\begin{enumerate}
+
+\item Cada aresta de um cubo está aumentando a uma taxa de $6\ cm/seg$. Com que taxa o volume do cubo estará aumentando, quando a área total do cubo for $24cm^{2}$?
+
+\item Um sólido é formado retirando-se concavidades semi-esféricas das extremidades de um cilindro. Se a área total do cilindro é de $28\pi cm^{2}$, ache o raio do cilindro que maximiza o volume do sólido.
+
+\item Calcule os seguintes limites:
+\begin{enumerate}
+\item[(a)] $\displaystyle\lim_{x\rightarrow\dfrac{\pi}{2}}\dfrac{\ln(\mbox{sen}x)}{(\pi-2x)^{2}}$;
+\vspace{0.2cm}
+\item[(b)] $\displaystyle\lim_{x\rightarrow0}\dfrac{\cos x-\cosh x}{x^{2}}$.
+\end{enumerate}
+
+\item Mostre que:
+\begin{enumerate}
+\item[(a)] A função $f(x)=x^{101}+x^{51}+x+1$ não tem máximo nem mínimo local;
+\vspace{0.2cm}
+\item[(b)] $\cosh(\ln x)=\dfrac{x^{2}+1}{2x}$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Se $f(x)=ax^{3}+bx^{2}$, determinar $a$ e $b$ de forma que o gráfico de $f$ tenha um ponto de inflexão em $(1,2)$.
+\vspace{0.2cm}
+\item[(b)] Dada a função $f(x)=
+\left\{
+\begin{array}{cclllll}
+\vspace{0.2cm}
+x^{2}-1, &  & \mbox{se} \ \ x<2\\
+\vspace{0.2cm}
+7-x^{2}, &  & \mbox{se} \ \ x\geq2,\\
+\end{array}
+\right.
+$
+calcule seus va-lores extremos absolutos no intervalo $[0,3]$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reavaliação AB2-17 de dezembro de 2010}
+\indent \par
+
+\begin{enumerate}
+
+\item Um triângulo tem vértices em $(-2,0)$, $(3,0)$ e $(x,y)$, onde $(x,y)$ é um ponto da parábola $y=-\dfrac{1}{4}x^{2}+4$ e $y\geq0$. Determine o ponto $(x,y)$ para o qual a área desse triângulo seja máxima.
+
+\item Um homem anda ao longo de um caminho reto a uma velocidade de $1,5\ m/s$. Um holofote localizado no chão a $6m$ do caminho é mantido focalizado no homem. A que taxa o holofote está girando quando o homem está a $8m$ do ponto do caminho mais próximo da luz?
+
+\item Calcule os seguintes limites:
+\begin{enumerate}
+\item[(a)] $\displaystyle\lim_{x\rightarrow+\infty}\dfrac{\mbox{sen}\dfrac{1}{x}}{\mbox{arctg}\dfrac{1}{x}}$;
+\vspace{0.2cm}
+\item[(b)] $\displaystyle\lim_{x\rightarrow+\infty}x^{\frac{1}{x}}$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Ache os valores máximos e mínimos absolutos, se existirem, da função $f(x)=\dfrac{x^{2}}{x+3}$, restrita ao intervalo $[-4,-1]$.
+\vspace{0.2cm}
+\item[(b)] Verifique os intervalos de crescimento da função $f(x)=\dfrac{x}{2}-\mbox{sen}x$, quando restrita ao intervalo $[0,2\pi]$. Verifique também o comportamento da concavidade.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Mostre que a função $f(x)=4x^{5}+3x^{3}+3x-2$ possui exatamente uma raiz real.
+\vspace{0.2cm}
+\item[(b)] Ache uma aproximação para $\mbox{senh}(0,002)$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Avaliação Final-21 de dezembro de 2010}
+\indent \par
+
+\begin{enumerate}
+
+\item Uma longa faixa de metal com $8cm$ de largura deve ser transformada numa calha virando para cima dois lados, em ângulos retos com relação à base. Se a calha deve ter capacidade máxima, quantos centímetros devemos virar para cima nos lados?
+
+\item Três amigos se despediram ao meio dia e foram para casa. Um deles estava de moto, o outro de carro e o terceiro de bicicleta. O que viajava de carro saiu para o norte com velocidade de $50\ km/h$, o que estava de moto viajou para o leste com velocidade de $30\ km/h$ e o último foi para o sul com velocidade de $10\ km/h$. Passadas duas horas, qual a taxa de variação da área do triângulo formado pela posição dos três amigos?
+
+\item Calcule, sem usar a Regra de L'Hôspital, os seguintes limites:
+\begin{enumerate}
+\item[(a)] $\displaystyle\lim_{x\rightarrow1^{-}}\dfrac{(x^{2}-3x+2)\arccos(x)}{x^{2}-1}$;
+\vspace{0.2cm}
+\item[(b)] $\displaystyle\lim_{x\rightarrow-\pi^{+}}3^{\mbox{tg}\left(\frac{x}{2}\right)}\cdot\mbox{sen}x$. [\textbf{Sugestão:} Use o Teorema do Confronto].
+\end{enumerate}
+
+\item Seja $f(t)=
+\left\{
+\begin{array}{cclllll}
+\vspace{0.2cm}
+mt-2, &  & \mbox{se} \ \ 1\leq t\leq2\\
+\vspace{0.2cm}
+t^{4}-4, &  & \mbox{se} \ \ 2<t\leq3\\
+\vspace{0.2cm}
+\dfrac{\sqrt{t+1}-2}{t-3}, &  & \mbox{se} \ \ 3<t\leq4.\\
+\end{array}
+\right.
+$
+\begin{enumerate}
+\item[(a)] Determine $m\in\mathbb R$ que torna $f(t)$ contínua em $t=2$.
+\vspace{0.2cm}
+\item[(b)] A função $f$, para $m$ como no item anterior, é contínua em $[1,4]$? Justifique sua resposta.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item[(a)] Suponha que $f$ seja uma função derivável tal que $f(g(x))=x$ e $f'(x)=1+(f(x))^{2}$, $\forall x\in\mathbb R$. Mostre que $g'(x)=\dfrac{1}{1+x^{2}}$.
+\vspace{0.2cm}
+\item[(b)] Usando diferenciação logarítmica, calcule a derivada da função $f(x)=\sqrt[4]{\dfrac{x^{2}+1}{x^{2}-1}}$.
+\end{enumerate}
+
+\item Considere a função $f$ tal que $f''(x)=\dfrac{x^{2}-2x}{x^{2}+1}$.
+\begin{enumerate}
+\item[(a)] Determine os intervalos onde a concavidade está voltada para cima ou para baixo, bem como os pontos de inflexão de $f$.
+\vspace{0.2cm}
+\item[(b)] Determine os intervalos onde $f'$ é crescente e onde $f'$ é decrescente.
+\vspace{0.2cm}
+\item[(c)] Aponte os pontos de máximo e mínimo relativos de $f'$.
+\end{enumerate}
+
+\item Determine a equação das retas tangentes à circunferência $x^{2}+y^{2}=1$, que passam pelo ponto $(1,2)$.
+
+\item Dada a função $f(x)=2x-1-\cos x$, mostre que ela possui exatamente uma raiz real.
+
+\item Calcule os seguintes limites:
+\begin{enumerate}
+\item[(a)] $\displaystyle\lim_{x\rightarrow1^{+}}x^{\ln\left(\frac{1}{x-1}\right)}$;
+\vspace{0.2cm}
+\item[(b)] $\displaystyle\lim_{x\rightarrow\infty}\left(1+\dfrac{a}{x}\right)^{bx}$.
+\end{enumerate}
+
+\item Determine as assíntotas do gráfico de $f(x)=\dfrac{x^{2}+x-6}{x^{2}+4x-12}$.
+
+
+\end{enumerate}
+
+
+\chapter{2011.1} 
+\indent \par 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{1ª Avaliação-25 de março de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+\item Considere $f:[a,b]\rightarrow\mathbb{R}$ uma função contínua, tal que $$f(a).f(b)<0.$$ Mostre que $f$ possui, pelo menos, uma raiz real, dando justificativas.
+\item Calcule $\displaystyle\lim_{x\rightarrow 2}\frac{\sqrt{6-x}-2}{\sqrt{3-x}-1}$.
+\end{enumerate}
+
+\item Encontre $m$ e $n$, tais que as seguintes funções sejam contínuas em $\mathbb{R}$:\\\\
+(a) $f(x)=
+\left\{
+\begin{array}{lll}
+\frac{2x^3-54}{x-3},\ \text{se}\ x\neq 3,\\
+m, \text{se}\ x=3\\
+\end{array}
+\right.$ \ \ \ \
+(b) $h(x)=
+\left\{
+\begin{array}{lll}
+\frac{\sqrt[3]{x}-1}{x-1},\ \text{se}\ x\leq 1,\\
+3n^2, \text{se}\ x>1.\\
+\end{array}
+\right.$
+
+\item \begin{enumerate}
+\item Calcule $\displaystyle\lim_{x\rightarrow 1^+}(x^3-1).\sen\left(\frac{1}{x^3-1}\right)$.\\
+\item Se $f(x)=
+\left\{
+\begin{array}{lll}
+x^2.\sen(\frac{1}{x}),\ \text{se}\ x\neq 0,\\
+0, \text{se}\ x=0,\\
+\end{array}
+\right.$
+determine $f'(0)$.\\
+Sugestão: Use o Teorema do Confronto.
+\end{enumerate}
+
+\item Procure as assíntotas horizontais e verticais da curva $y=\displaystyle\frac{x^2-3x+2}{x^3-4x}$.
+
+\item Há duas retas tangentes à curva $y=x^3-3x$ que são perpendiculares à reta $2x+18y-9=0$. Quais são elas?
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{1ª Avaliação-26 de março de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item Considere a função $f(x)=\sqrt{x+1}$.
+\begin{enumerate}
+\item Calcule $f'(x)$, usando a definição de derivada.
+\item Determine a área do triângulo que a reta tangente à curva dada, no ponto $x=0$, forma com os eixos coordenados.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Calcule os seguintes limites:
+\begin{enumerate}
+\item $\displaystyle\lim_{x\rightarrow +\infty} (\sqrt{x^2+4x+1}-2)$;
+\item $\displaystyle\lim_{x\rightarrow 3}\frac{\sqrt{x+6}-x}{x^3-3x^2}$.
+\end{enumerate}
+\item Enuncie o Teorema do Valor Intermediário.
+\item Use o Teorema do Valor Intermediário para mostrar que existe uma raiz da equação $x^2=\sqrt{x+1}$ no intervalo $(1,2)$.
+\end{enumerate}
+
+\item Considere a função
+$f(x)=
+\left\{
+\begin{array}{lll}
+2x^2-3x+\sen(\pi x),\ \text{se}\ x\leq 1,\\
+2x+b^2, \text{se}\ x>1,\ \text{com $b$ constante}\\
+\end{array}
+\right.$\\
+Determine o maior conjunto real no qual $f$ é contínua. Justifique.
+
+\item Seja $f:\mathbb{R}\rightarrow\mathbb{R}$ uma função diferenciável em $x=0$, tal que\linebreak $f(x+h)=f(x).f(h)$, sendo $f(x)\neq 0$ em todos os reais.
+\begin{enumerate}
+\item Calcule $f(0)$.
+\item Mostre que $\displaystyle f'(0)=\lim_{h\rightarrow 0} \frac{f(h)-1}{h}$.
+\item Mostre que $f'(x)=f'(0).f(x)$.
+\end{enumerate}
+
+\item Procure as assíntotas da curva dada por $\displaystyle f(x)=\frac{x^3+1}{x^3-x}$.
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª Avaliação-15 de abril de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate} 
+\item A reta $y=x$ é tangente à parábola $y=x^2+mx+r$ no ponto de abscissa 1. Determine $m$ e $r$.
+\item Se $F(x)=f(e^{x^2})$ e $G(x)=e^{(f(x))^2}$. Determine $F'(x)$ e $G'(x)$ em função de $f(x)$ e $f'(x)$.
+\end{enumerate}
+
+\item Onde a reta normal à elipse $x^2-xy+y^2=3$ no ponto $(-1,1)$ intercepta a elipse uma segunda vez?
+
+\item 
+\begin{enumerate} \item Uma maneira de definir $\sec^{-1}x$ é dizer que
+$$y=\sec^{-1}x \Longleftrightarrow \sec y=x\ \ \ \text{e}\ \ \ 0\leq y\leq \frac{\pi}{2}\ \ \ \text{ou}\ \ \ \pi\leq y\leq \frac{3\pi}{2}.$$
+Mostre que se essa definição for adotada, então
+$$\frac{d}{dx}(\sec^{-1}x)=\frac{1}{x\sqrt{x^2-1}}.$$
+\item Determine a derivada da função $f(x)=\sec^{-1}(x^2)$.
+\end{enumerate}
+
+\item 
+\begin{enumerate} \item Mostre que a curva $f(x)=\tg(e^{2^x})$ não possui tangente horizontal em nenhum ponto.
+\item Calcule $\displaystyle\lim_{x\rightarrow 0}\frac{\sen(x^5)}{x^2}$.
+\end{enumerate}
+
+\item Derive as seguintes funções:
+\begin{enumerate}
+\item $g(x)=(x^3-\sqrt{x^2+1})\sen^{-1}x$;
+\item $h(x)=\displaystyle\frac{\sen x}{3^x+x}$.
+\end{enumerate}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{2ª Avaliação-16 de abril de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate} 
+\item Duas curvas são tangentes num determinado ponto $(x,y)$ se possuem a mesma reta tangente nesse ponto. Determine $a,b$ e $c$ para que as curvas $y=ax-x^2$ e $y=x^2+2bx+c$ sejam tangentes no ponto $(1,0)$.
+\item Obtenha a equação da reta normal à curva $y=(2+x).e^x$ no ponto $(0,2)$.
+\end{enumerate}
+
+\item Determine a soma de todas as coordenadas dos pontos nos quais a reta tangente à curva $\sqrt{x}+\sqrt{y}=\sqrt{2}$ no ponto $(a,b)$ intercepta os eixos coordenados.
+
+\item \begin{enumerate}
+\item Se $g$ é uma função diferenciável em toda a reta real com $g(2)=2$ e $g'(2)=2$, encontre $f'(2)$ sabendo que $f(x)=g(g(g(x)))$.
+\item Calcule $f'(2)$ para $f(x)=\arctg(x^2+3)$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Encontre os pontos do gráfico de $h(x)=\displaystyle\frac{2^x}{\ln 2.\cos x}, x\in [0,2\pi]$, com $\displaystyle x\neq\frac{\pi}{2}$ e $\displaystyle x\neq\frac{3\pi}{2}$, cuja reta tangente é horizontal.
+\item Calcule $\displaystyle\lim_{\theta\rightarrow 0} \frac{\cotg\theta-\cossec\theta}{\theta.\cossec\theta}$.
+\end{enumerate}
+
+\item Derive as seguintes funções:
+\begin{enumerate}
+\item $f(x)=\tg(\sqrt{\cotg(7x)})$;
+\item $g(x)=\sqrt{1-x^2}.\arccos x$.
+\end{enumerate}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{3ª Avaliação-20 de maio de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item A área de um círculo está variando $\sqrt{3}\pi\ m^2/s$. Determine a taxa de variação da área do triângulo equilátero inscrito nesse círculo.
+
+\item \begin{enumerate}
+\item Uma linha de telefone é pendurada entre dois postes separados 14 metros, na forma da catenária $y=20.\displaystyle\cosh\left(\frac{x}{20}\right)-15$, em que $x$ e $y$ são medidos em metros. Encontre a inclinação dessa curva onde ela encontra o poste à direita.
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{Figura1.pdf}\\
+\end{figure}
+\item Mostre que $(\senh x+\cosh x)^n=\senh(nx)+\cosh(nx)$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Utilize diferenciais para estimar a quantidade de tinta necessária para aplicar uma camada de $0,05\ cm$ de tinta a uma semi-esfera com diâmetro de $50 m$.
+\item Determine os números críticos da função $f(x)=\displaystyle\frac{1+\sen x}{1-\sen x}$, em seu domínio.
+\end{enumerate}
+
+\item Use a derivação logarítmica para determinar a derivada de $y=\displaystyle\frac{e^{-3x}.\sqrt{2x-5}}{(6-5x)^4}$.
+
+\item Encontre os valores máximo e mínimo absolutos da função\linebreak $f(x)=\displaystyle\log_{2}\left[\sen\left(\frac{\pi}{2}x^2+\frac{\pi}{4}\right)\right]$, no intervalo $-\displaystyle\frac{\sqrt{6}}{6}\leq x\leq \frac{\sqrt{2}}{2}$.
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{3ª Avaliação-21 de maio de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate} 
+\item Derive a função $f(x)=\displaystyle\log_{3}\left[\frac{e^{3x}.\sqrt{x}}{(3x-4)^5}\right]$.
+\item Use aproximação linear para estimar o número $\tg 46\degree$.
+%coloquei \degree para cinalisar o °.
+\end{enumerate}
+
+\item \begin{enumerate} 
+\item Se $y=\ln(\sec x + \tg x)$, mostre que $\sec x = \cosh y$.
+\item Mostre que qualquer função da forma $y=A.\senh(mx)+B\cosh(mx)$ satisfaz a equação diferencial $y''=m^2y$.
+\end{enumerate}
+
+\item Use derivação logarítmica para determinar a derivada de $y=\displaystyle\frac{e^{-2x}.(2-x^3)^{\frac{3}{2}}}{\sqrt{1+x^2}}$.
+
+\item A diagonal de um cubo de lado $l$ está variando a uma taxa de $\frac{\sqrt{3}}{3}\ cm/s$. Qual a taxa de variação do volume desse cubo quando $l=3\ cm$?
+
+\item \begin{enumerate} 
+\item Se $f(x)=(x-1)^{\frac{2}{3}}+2$, ache os valores máximos e mínimos absolutos de $f$ no intervalo $[0,9]$.
+\item Determine os números críticos da função $f(x)=(x+5)^2.\sqrt[3]{x-4}$.
+\end{enumerate}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{4ª Avaliação-17 de junho de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item Calcule:
+\begin{enumerate} 
+\item $\displaystyle\lim_{x\rightarrow 1^{+}}(\ln x)^{\sen(\pi x)}$;
+\item $\displaystyle\lim_{x\rightarrow \infty}\left(1+\frac{2}{x}\right)^x$.
+\end{enumerate}
+
+\item De um pedaço retangular de cartolina de dimensões $8\ cm\times 15\ cm$, quatro quadrados iguais devem ser cortados, um em cada canto. A parte cortada remanescente é então dobrada formando uma caixa aberta. Qual o comprimento do lado desses quadrados que maximiza o volume da caixa?
+
+\item \begin{enumerate}
+\item Enuncie corretamente o Teorema de Rolle.
+\item Quantas soluções a equação $\sen^2 x - 3x=5$ possui? Justifique sua resposta.
+\end{enumerate}
+
+\item Esboce o gráfico de $f(x)=\displaystyle\frac{\ln x}{x}$.
+
+\item \begin{enumerate}
+\item Mostre que a função $f(x)=2x+\dfrac{\ln x}{\sqrt[3]{x}}$ tem assíntota oblíqua\linebreak $y=2x$.
+\item Faça o gráfico da função $f(x)=\arccos(\cos x)$, para $0\leq x\leq \pi$.
+\end{enumerate}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{4ª Avaliação-18 de junho de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item Calcule:
+\begin{enumerate} 
+\item $\displaystyle\lim_{x\rightarrow 0}\left(\frac{1}{2x}-\frac{1}{e^{2x}-1}\right)$;
+\item $\displaystyle\lim_{x\rightarrow \frac{\pi}{2}^{-}}(\sen x)^{\tg x}$.
+\end{enumerate}
+
+\item Um Departamento estatal de estradas planeja construir uma nova rodovia entre as cidades A e B. Pela cidade A passa uma estrada abandonada que tem a direção leste-oeste. A cidade B situa-se $3\ km$ ao norte do ponto da estrada abandonada que fica $5\ km$ a leste da cidade A. O custo de restauração da estrada antiga é de $R\$ 200.000,00$ por quilômetro e o custo da nova estrada é de $R\$400.000,00$ por quilômetro. Levando em consideração que também poder-se-á usar a combinação restauração mais construção de rodovia, qual deve ser a escolha da construção, de modo a minimizar o custo do Departamento?
+
+\item \begin{enumerate}
+\item Mostre que a equação $3x+2.\cos x+5=0$ tem exatamente uma raiz real.
+\item Mostre que, se em determinado intervalo, as funções têm a mesma derivada, nesse intervalo elas diferem por uma constante.
+\end{enumerate}
+
+\item Faça o gráfico de $f(x)=x.e^{-x^2}$.
+
+\item Para quais valores de $a$ e $b$ a função $f(x)=a.x.e^{bx^2}$ tem valor máximo $f(2)=1$?
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Reavaliação AB1-22 de junho de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item Determine todos os pontos da curva $x^2-y^2=2x+4y$ nos
+quais a reta tangente é horizontal. Existe algum ponto da curva
+para o qual a tangente é vertical?
+
+\pagebreak
+
+\item Calcule os seguintes limites, se existirem:
+\begin{center}
+$(a)\ \ \displaystyle \lim_{x \to 1}\dfrac{x^2-1}{|x-1|};$  \ \ \ $(b)\ \ \displaystyle \lim_{x \to 0^+ }\ln(1+x)\cos \dfrac{1}{x};$ \ \ \ $(c)\ \ \displaystyle \lim_{x \to 2}\dfrac{\sqrt{x+2}-2}{\sqrt[4]{x+2}-\sqrt{2}}$
+\end{center}
+
+
+\item
+ \begin{enumerate}
+    \item[a)]  Determine os pontos onde as curvas $y=e^{-x^2}$ e
+    $y=e^{x^2}$ têm retas tangentes perpendiculares.
+    \item[b)] A função
+    $$f(x)=\left\{
+\begin{array}{cc}
+x^2-6x+9,&se\;\; x\geq2\\
+x^2-2x+1,&se\;\;x< 2
+\end{array}
+\right. $$
+ é diferenciável em $x=2?$
+ \end{enumerate}
+
+
+\item
+ \begin{enumerate}
+    \item[a)]  A função $f(x)=\left| \dfrac{x^2\,\cos
+    x}{x^2+1}\right|$ é uma função contínua em $\mathbb{R}?$ Justifique
+    sua resposta corretamente.
+    \item[b)] Use o Teorema do Valor Intermediário para responder
+    corretamente o seguinte questionamento: Algum número real $x$
+    somado ao número $1$ é exatamente igual ao seu cubo?
+\item[c)] A função
+$f(x)=\left\{
+\begin{array}{cc}
+x^2,& se\;\;x< 1\\
+\sqrt{x},&se\;\;x\geq 1
+\end{array}
+\right. $ é contínua em $\mathbb{R}?$ Justifique corretamente sua
+resposta.
+ \end{enumerate}
+
+
+\item
+
+\begin{enumerate}
+    \item[a)]  Determine a área do retângulo formado pelas três
+    assíntotas à curva $f(x)= \dfrac{x^2+2x}{x^2-1}$ e pelo
+    eixo$-x.$
+    \item[b)] Uma das assíntotas intercepta a curva. Em que ponto
+    isto acontece?
+ \end{enumerate}
+
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Reavaliação AB1-25 de junho de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item O ângulo $\alpha$ entre duas curvas $c_1$ e $c_2$ em um ponto $p=c_1\cap c_2$ é definido como sendo o ângulo entre as retas tangentes a $c_1$ e $c_2$ em $p$. Podemos encontrar tal ângulo $\alpha$ usando o fato de que $\tg\alpha=\frac{m_2-m_1}{1+m_2m_1}$, onde $m_1$ e $m_2$ são os coeficientes angulares das retas tangentes. De posse dessas informações encontre os ângulos entre as curvas $x^2-y^2=3$ e $x^2-4x+y^2+3=0$ nos pontos de intersecção dessas curvas.
+
+\item Calcule os seguintes limites, se existirem:
+$$(a) \lim_{x\rightarrow 1}|x^2-1|2^{\cos(\frac{1}{1-x})}\ \ (b) \lim_{x\rightarrow 2}\frac{x^3+x^2-8x+4}{x-2}\ \ (c) \lim_{x\rightarrow 1}\frac{\sqrt{x+3}-\sqrt{5-x}}{x-1}.$$
+
+\item Seja $f(x)=ae^{\frac{-(x-b)^2}{2c^2}}$, onde $a,b$ e $c$ são constantes.
+\begin{enumerate}
+\item Calcule $f'(x)$.
+\item Determine os valores de $a, b$ e $c$ tais que aconteçam simultaneamente os seguintes fatos:
+\begin{enumerate}
+\item $y=4$ seja a equação da reta tangente à curva em $x=2$.
+\item $e^2y-4=8x$ seja a equação da reta tangente em $x=0$.
+\end{enumerate}
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Determine as coordenadas $x$ dos pontos onde a curva $y=x^3-3x$ intercepta a reta $y=1$.
+\item Uma partícula se desloca ao longo do eixo-x com velocidade\linebreak $v(t)=\displaystyle\frac{dx}{dt}=f(2^{x(t)})$, onde $f$ e $x$ são funções diferenciáveis. Calcule a aceleração $a(t)=\displaystyle\frac{dv}{dt}$ em $t=1$, sabendo que $x(1)=3$, $f'(8)=-2$ e $f(8)=2$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Considerando a função $f:\mathbb{R}_{-}^{*}\rightarrow\mathbb{R}$, dada por $f(x)=\frac{2x-4}{\sqrt{x^2+x}}$, determine os pontos nos quais suas assíntotas se interceptam.
+\item A assíntota horizontal intercepta a curva? Em que ponto isto acontece?
+\item A função $f(x)=
+\left\{
+\begin{array}{lll}
+x^4\sen(\frac{1}{x}),\ \text{se}\ x\neq 0,\\
+0,\ \text{se}\ x=0\\
+\end{array}
+\right.$
+é contínua em $\mathbb{R}$? Justifique corretamente sua resposta.
+\end{enumerate}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Reavaliação AB2-22 de junho de 2011}
+\indent \par
+
+\begin{enumerate}
+\item Uma partícula se desloca ao longo da parábola $y=x^2,$ no $1^o$ quadrante, de modo que sua coordenada $x$(medida em metros) aumenta em uma taxa constante de $10\ m/s.$ A que taxa varia o ângulo de inclinação da reta que liga a partícula à origem, quando $x$ tem $3$ metros?
+\item Determine a equação da reta que tangencia o gráfico de $f(x)=\dfrac{e^x+e^{-x}}{2},$ no ponto em que essa curva intercepta a curva $g(x)=\dfrac{e^x-e^{-x}}{2}+2.$
+\item Uma folha de papelão, medindo $24\ cm$ por $36\ cm,$ é dobrada ao meio para formar um retângulo de $24\ cm$ por $18\ cm.$ Depois, quatro quadrados congruentes com lados medindo $x\ cm,$ são recortados dos vértices do retângulo dobrado. A folha é desdobrada e seis abas são dobradas para cima, formando uma caixa com laterais e tampa. Determine o valor de $x$ que fornece o maior volume.
+\item \begin{enumerate}
+	\item Determine uma relação entre $m$ e $n$ que garanta que
+	$${\displaystyle \lim_{x\rightarrow 0}\dfrac{\sen^2(mx)}{\left[\ln(1+nx)\right]^2}=1};$$
+	\item Encontre a abscissa do ponto do gráfico de $y=(\sqrt{x})^x\cdot e^x$ onde a reta tangente é horizontal.
+\end{enumerate}
+\item Esboce o gráfico da função $f(x)=\dfrac{10x}{(x-1)^3},$ sabendo que $$f'(x)=\dfrac{-20x-10}{(x-1)^4}\mbox{\ \ e \ \  }f''(x)=\dfrac{60x+60}{(x-1)^5}.$$
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Reavaliação AB2-25 de junho de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+\item Calcule as linearizações das funções $f(x)=\tg x$ e $g(x)=\sen x$, em $x=0$.
+\item Usando essas linearizações, aproxime ambas as funções em $x=\dfrac{\pi}{6}$ e veja qual a mais pecisa nesse ponto.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Os raios do sol poente estão formando com um chão plano um ângulo que decresce à taxa de 0,25 radianos por minuto. Com que velocidade está crescendo a sombra de um edifício de 400 metros de altura, quando o ângulo de elevação do Sol é de $\dfrac{\pi}{6}$ radianos?
+\item Calcule $\displaystyle\lim_{x\rightarrow 1^{+}}(\ln x)^{\tg(x-1)}$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Seja $f(x)=5+3.(x-1)^{2/3}$, $x\in\mathbb{R}$. Mostre que $f(0)=f(2)$, e que $f'(c)\neq 0$ para todo número real $c$ no intervalo $(0,2)$. Isto contradiz o Teorema de Rolle?
+\item Determine as coordenadas do ponto no qual a reta tangente à curva $f(x)=\dfrac{e^x+e^{-x}}{2}$, no ponto em que $x=0$, intercepta a curva $g(x)=\dfrac{e^x-e^{-x}}{2}$.
+\end{enumerate}
+
+\item O volume de um cilindro circular reto é de $1\ dm^3$. Para a construção da superfície lateral usa-se um material que custa $R\$ 2,00$ por $dm^2$ e para a construção da base e da tampa, um material que custa $R\$ 3,00$ por $dm^2$. Quais as dimensões do raio e da altura que minimizam o custo da construção?
+
+\item Use recursos do Cálculo para construir o gráfico da função\linebreak $f(x)=e^x.\sen x$, no intervalo $[0,2\pi]$.
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Avaliação Final-01 de julho de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item Se $a>0$, $n$ é um inteiro não negativo e $b$ é um real qualquer, mostre que a função polinomial $f(x)=x^{2n+1}+ax+b$ não pode ter duas raízes reais distintas.
+
+\item Duas torres têm, respectivamente, 5m e 3m de altura e estão separadas por uma distância de $15\ m$. Um cabo-guia deve ser estendido do ponto A (no chão), localizado entre duas torres, até o topo de cada uma delas. Localize o ponto A, de modo que o comprimento total de cabo seja mínimo. \textbf{Obs.}: $\sqrt{202500}=450$.
+
+\item \begin{enumerate}
+\item Calcule $\displaystyle\lim_{x\rightarrow 3^{+}}\left(\frac{2x}{\ln(x-2)}-\frac{1}{x-3}\right)$;
+\item Se o gráfico abaixo fosse da primeira derivada de uma função $f$, como você classificaria o ponto $(c,0)$?
+\item E se ele fosse o gráfico da segunda derivada de $f$, como você denominaria o ponto $(c,0)$?
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.5]{Figura2.pdf}\\
+\end{figure}
+\end{enumerate}
+
+\pagebreak
+
+\item \begin{enumerate}
+\item Dada a função $f(x)=
+\left\{
+\begin{array}{lll}
+x^3,\ \text{se}\ x\leq 1,\\
+mx+b, \text{se}\ x>1,\\
+\end{array}
+\right.$\\
+estabeleça uma relação entre $b$ e $m$ que a torne contínua em $x=1$.
+\item Encontre os valores de $b$ e $m$ que tornem $f$ derivável em $\mathbb{R}$.
+\item Determine, depois, $f'(x)$.
+\end{enumerate}
+
+\item Um retângulo está inscrito em um círculo de raio igual a $5\ dm$. Se o comprimento do retângulo está diminuindo à razão de $2\ dm/s$, com que rapidez a área está variando, no instante em que o comprimento for de $6\ dm$?
+
+\item \begin{enumerate}
+\item Encontre o ponto de inflexão da curva $y=\displaystyle\arcsen\left(\frac{1-x^2}{1+x^2}\right)$.
+\item Sendo $f(x)=x^3+x+1$ inversível, tome $g$ como sua inversa e calcule $g'(1)$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Use derivação logarítmica para achar a derivada de $f(x)=x^{\sen x}$.
+\item Calcule $f'\left(\frac{\pi}{4}\right)$, sendo $f(x)=\ln|\sec x+\tg x|$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Use diferenciais para estimar o valor de ${26}^{2/3}$.
+\item Em quais pontos da curva $y=\cosh x$ a tangente tem inclinação 1?
+\end{enumerate}
+
+\item Dada a função $f(x)=\dfrac{x^3}{(x-1)^2}$, tem-se $f'(x)=\dfrac{x^2(x-3)}{(x-1)^3}$ e\linebreak $f''(x)=\dfrac{6x}{(x-1)^4}$. Determine, caso existam:
+\begin{enumerate}
+\item os extremos relativos e os intervalos de crescimento e decrescimento;
+\item os pontos de inflexão e os intervalos onde a concavidade é para cima ou para baixo;
+\item as assíntotas.
+\end{enumerate}
+Depois disto, desenhe o gráfico de $f$.
+
+\end{enumerate}
+
+
+\chapter{2011.2} 
+\indent \par 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{1ª Avaliação-02 de setembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item Calcule os seguintes limites, quando existirem. Caso não existam, explique o porquê.
+\begin{enumerate}
+\item $\displaystyle\lim_{x\rightarrow +\infty}\frac{|2x^3+mx^2-4|}{-2x^3+7x^2+mx}$, onde $m$ é um número real fixado.
+\item $\displaystyle\lim_{x\rightarrow 0}\frac{\cos(x)-\cos^3(x)}{x^2}$.
+\end{enumerate}
+
+\item Use a definição de derivada para determinar $f'(1)$, onde $f(x)=\frac{1}{|x|}$. Obtenha, ainda, a equação da reta tangente ao gráfico de $f$ no ponto $(1,1)$.
+
+\item Seja $f:\mathbb{R}\rightarrow\mathbb{R}$ uma função tal que $$1+x^2+\frac{x^6}{3} \leq f(x)+1 \leq \sec^2(x)+\frac{x^6}{3}.$$
+Lembre-se que $\sec(x)=\dfrac{1}{\cos(x)}$. Use o Teorema do Confronto para calcular:
+\begin{enumerate}
+\item $\displaystyle\lim_{x\rightarrow 0} f(x)$;
+\item $\displaystyle\lim_{x\rightarrow 0} \left[f(x)\cos\left(\frac{1}{x+x^2}\right)\right]$.
+\end{enumerate}
+
+\pagebreak
+
+\item Faça os seguintes itens:
+\begin{enumerate} 
+\item Use o Teorema do Valor Intermediário para mostrar que a equação $$\sqrt[3]{x-8}+9\sqrt[3]{x^2}=29$$
+tem pelo menos uma solução no intervalo $0\leq x\leq  8$.
+\item Considere a função $f(x)=\dfrac{2x^2-5x+2}{x^2-4}$. Encontre todos os números onde $f$ é contínua. Calcule ainda os limites $\displaystyle\lim_{x\rightarrow 2} f(x)$ e $\displaystyle\lim_{x\rightarrow -2} f(x)$, se existirem.
+\end{enumerate}
+
+\item Considere a função $f(x)=\dfrac{kx^2+(m+1)x+2}{x^2+2x-3}$, onde $k,m\in\mathbb{R}$. Determine:
+\begin{enumerate} \item o valor de $k$ para o qual $y=2$ seja a única assíntota horizontal ao gráfico de $f$.
+\item Usando o valor de $k$ obtido no item acima, determine o valor de $m$ de modo que $x=1$ não seja assíntota vertical ao gráfico de $f$ e $x=-3$ seja a única assíntota vertical ao gráfico de $f$.
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{1ª Avaliação-03 de setembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+\item Calcule $\displaystyle\lim_{x\rightarrow 1}\frac{\sqrt{x}-1}{\sqrt[6]{x}-1}$.
+\item Calcule $\displaystyle\lim_{x\rightarrow 0}x\cotg(3x)$.
+\end{enumerate}
+
+\item Seja $f(x)=
+\left\{
+\begin{array}{lll}
+\cos x,\ \text{se}\ x<0,\\
+\sqrt{1-x^2},\ \text{se}\ 0\leq x\leq 1,\\
+x^2-2,\ \text{se}\ x>1.\\
+\end{array}
+\right.$
+Determine todos os números onde $f(x)$ é contínua.
+
+\item \begin{enumerate} \item Considere $f(x)=\frac{7}{x^2+kx-5x-5k}$. Determine o valor de $k$ para que $f$ tenha uma única assíntota vertical.
+\item Determine as assíntotas horizontais do gráfico de $f(x)=\dfrac{\sqrt[4]{x^4+4}}{2x+1}$.
+\end{enumerate}
+
+\pagebreak
+
+\item \begin{enumerate} \item Use o Teorema do Confronto para calcular $\displaystyle\lim_{x\rightarrow 0^{+}}\sqrt[3]{x}10^{\cos 2x}$.
+\item Seja $f(x)=\cos x^3-x$. Mostre que esta função se anula em algum número positivo.
+\end{enumerate}
+
+\item \begin{enumerate} \item Use a definição de derivada para calcular $f'(2)$, onde $f(x)=\sqrt[3]{x}$.
+\item Seja $f(x)=
+\left\{
+\begin{array}{lll}
+x^2,\ \text{se}\ x\leq 2,\\
+-2x^2+6x,\ \text{se}\ x>2.\\
+\end{array}
+\right.$
+
+A reta que tangencia o gráfico da função $y=f(x)$ em $x=2$ volta a tocá-lo em outro ponto. Determine-o.
+\end{enumerate}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª Avaliação-30 de setembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+\item Considere a função $f(x)=
+\left\{
+\begin{array}{lll}
+\frac{\sen x}{|x|},\ \text{se}\ x\neq 0,\\
+0,\ \text{se}\ x=0.\\
+\end{array}
+\right.$.
+\begin{enumerate}
+\item Verifique se $f$ é contínua em $x=0$.
+\item Esta função é diferenciável em $x=0$? Justifique sua resposta.
+\end{enumerate}
+\item Seja $g(x)$ uma função derivável em $\mathbb{R}$. Determine $F'(x)$ para $F(x)=e^{[g(x)]^2}g(x)$.
+\end{enumerate}
+
+\item \begin{enumerate} \item Calcule a derivada de $y=\log_{2}(4^{\arctg x^2}x)$.
+\item Determine a equação da reta normal ao gráfico de $y=e^{\tg x}-\sec x$ no ponto de abscissa $x=0$.
+\end{enumerate}
+
+\item \begin{enumerate} \item Mostre que a função $f(x)=\arcsen x + \arccos x$ tem derivada igual a zero em todos os seus pontos. Neste caso a função é constante. Determine o valor dessa constante.
+\item Calcule a derivada da função $y=\log_{10}\left(\frac{1+e^x}{1-e^x}\right)$.
+\end{enumerate}
+
+\item Encontre os dois pontos onde a curva $x^2+xy+y^2=7$ cruza o eixo-$x$. A seguir, mostre que as retas tangentes à curva nesses pontos são paralelas.
+
+\item Se $2^{\sen x}\arctg y=\frac{\pi}{3}$, determine o coeficiente angular da reta que tangencia essa curva no ponto em que $y=\sqrt{3}$.
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{2ª Avaliação-01 de outubro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item Calcule as derivadas das funções abaixo:
+\begin{enumerate}
+\item $f(x)=\dfrac{3\sqrt{x}}{e^{x^2}}$;
+\item $f(x)=\sqrt{\sen(2x+x^6)}+15$.
+\end{enumerate}
+
+\item \begin{enumerate} \item A função $f(x)=\sqrt[7]{x^2}$ possui derivada em $x=0$? Justifique sua resposta. Esta função possui reta tangente no ponto $(0,0)$? Justifique sua resposta.
+\item Sendo $f(x)=x.\arcsen\frac{1}{x}$, calcule $f'(\frac{1}{2})$.
+\end{enumerate}
+
+\item Determine onde a função $f(x)=|x^2-5x+6|$ é diferenciável.
+
+\item \begin{enumerate} \item Calcule $y'$ sabendo que $\arcsec(x+y)=x^2-y$.
+\item Uma maneira de definir $\arcsec(x)$ é dizer que $y=\arcsec(x)\Leftrightarrow\sec(y)=x$ e $0\leq y\leq \frac{\pi}{2}$ ou $\pi\leq y\leq\frac{3\pi}{2}$. Mostre que, se essa definição for adotada, então
+$$\frac{d}{dx}[\arcsec(x)]=\frac{1}{x\sqrt{x^2-1}}.$$
+\end{enumerate}
+
+\item Considere a função $y=f(x)$ satisfazendo $(x^2+y^2)^2=2(x^2-y^2)$. Calcule $f'(x)$ no ponto de abscissa $x=\dfrac{\sqrt{3}}{2}$ e ordenada $y=\dfrac{1}{2}$.
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{3ª Avaliação-04 de novembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate}
+\item Mostre que $$\lim_{x\rightarrow\infty}\left(1+\frac{e}{x}\right)^x = e^e.$$
+\item Mostre que a equação $2x-3+\cos x=0$ tem uma única solução.
+\end{enumerate}
+
+\item Uma partícula se move sobre uma reta vertical de forma que sua coordenada no instante $t$ seja $y=t^3-t^2-5t+6$, $t\geq -2$.
+\begin{enumerate}
+\item Encontre as funções velocidade e aceleração.
+\item Encontre a distância percorrida pela partícula no intervalo de tempo $0\leq t\leq 3$.
+\item Encontre a velocidade máxima e mínima da partícula, no intervalo $[-2,3]$.
+\end{enumerate}
+
+\item Um cone sólido com raio $2\ cm$ e altura $4\ cm$ é submerso com a ponta para baixo em um cilindro circular reto de raio $4\ cm$ e altura $10\ cm$. Suponha que o cilindro tem água pela metade e que o cone é submerso a uma taxa de $2\ cm/s$. Com que velocidade o nível da água estará subindo no cilindro no instante em que o cone fica completamente submerso?
+
+\item Ache os extremos absolutos (globais) de $f(x)=1-x^{2/3}$ no intervalo $[-1,8]$.
+
+\item Comprove que as hipóteses do Teorema do Valor Médio estão satisfeitas pela função $f(x)=\sqrt{1+\cos x}$, no intervalo $[-\pi/2,\pi/2]$. Ache, então, um valor adequado de $c$ que satisfaça a conclusão do teorema. 
+
+
+\end{enumerate}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{3ª Avaliação-05 de novembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item Uma bola é atirada para cima do topo de um prédio de $112m$ de altura. Sua equação do movimento é $s(t)=-16t^2+96t$, onde $s$ é dado em metros e $t$ em segundos. Determine:
+\begin{enumerate}
+\item a velocidade da bola após $2s$;
+\item a altura máxima que a bola atinge;
+\item o tempo que a bola levará para atingir o solo;
+\item a velocidade da bola ao atingir o solo.
+\end{enumerate}
+
+\item \begin{enumerate} \item Encontre uma linearização de $f(x)=\cosh x + \arctg(\senh(2x))$ nas proximidades de $a=0$.
+\item Use a aproximação linear do item acima para dar um valor apro-\linebreak ximado de $f(0,03)$.
+\end{enumerate}
+
+\item Um observador caminha com uma velocidade de $1,5\ m/s$ em direção a uma parede na qual está fixado um quadro $80\ cm$ acima do nível dos olhos do observador e medindo $1m$ de altura. Seja $\theta$ o ângulo de visão que observador tem do quadro.
+
+\pagebreak
+
+\begin{enumerate} 
+\item Escreva $\theta$ em função de $x$.
+\item Encontre a taxa de variação do ângulo de visão do quadro, no instante que o observador está a $2m$ da parede.
+\begin{figure}[!htb]
+\centering
+\includegraphics[scale=0.7]{Figura3.pdf}\\
+\end{figure}
+\end{enumerate}
+
+\item \begin{enumerate} \item Ache os extremos absolutos de $f(x)=2\sen x + \cos 2x$ no intervalo $[0,2\pi]$.
+\item Mostre que $\cotg(2x)=\frac{1}{2}(\tgh(x)+\cotgh(x))$.
+\end{enumerate}
+
+\item \begin{enumerate} \item Comprove as hipóteses do Teorema do Valor Médio estão satisfeitas pela função $f(x)=\sqrt{1-\sen x}$, no intervalo $[0,\pi/2]$. Ache, então, um valor adequado de $c$ que satisfaça a conclusão do teorema.
+\item Use o Teorema de Rolle para provar que a equação\linebreak $4x^5+3x^3+3x-2=0$ tem exatamente uma raiz no intervalo $(0,1)$.
+\end{enumerate}
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{4ª Avaliação-02 de dezembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item Um pentágono com um perímetro de $30m$ deve ser construído unindo um triângulo equilátero a um retângulo. Encontre as dimensões do retângulo e do triângulo que irão maximizar a área do pentágono.
+
+\item \begin{enumerate} \item Calcule $\displaystyle\lim_{x\rightarrow 2}\left[\frac{2}{\ln(x-1)}-\frac{2}{x-2}\right]$.
+\item Use a Regra de L'Hôpital para mostrar que $e=\displaystyle\lim_{x\rightarrow 0} (1+x)^{1/x}$.
+\end{enumerate}
+
+\item \begin{enumerate} \item Determine os valores de $k$, de modo que a função\linebreak $f(x)=x^3+3kx+5$, com $k\in\mathbb{R}$, possua um máximo e um mínimo locais.
+\item Dada a função $f(x)=\sqrt{x}.(\ln x)^2$, com $x>0$, determine:
+\begin{enumerate} \item Os intervalos de crescimento e decrescimento de $f$.
+\item Os pontos críticos de $f$.
+\end{enumerate} 
+\end{enumerate}
+
+\item \begin{enumerate} \item Se uma função $f$ é tal que $\displaystyle\lim_{x\rightarrow\infty}f'(x)=c$ ou $\displaystyle\lim_{x\rightarrow-\infty}f'(x)=c$, $(c>0)$, então $f$ possui assíntota oblíqua.\\
+Verifique, então, se a função $f(x)=e^x-x^2$ possui assíntota oblíqua.
+\item Seja $f$ derivável em $\mathbb{R}$ e seja $g$ dada por $g(x)=\dfrac{f(x)}{x}$, $x\neq 0$.\\
+Suponha que $p$ é ponto de máximo local de $g$ e mostre que a reta tangente ao gráfico de $f$ no ponto de abscissa $p$ passa na origem.
+\end{enumerate}
+
+\item Dada a função $f(x)=2\sen x+\cos 2x$, determine:
+\begin{enumerate}
+\item Suas assíntotas, caso existam;
+\item Seus intervalos de crescimento e decrescimento;
+\item Seus pontos críticos, caso existam;
+\item Onde a concavidade fica voltada para cima e onde fica voltada para baixo;
+\item Seus pontos de inflexão, caso existam.
+\end{enumerate}
+Depois de tudo, trace o gráfico de $f$.
+
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{4ª Avaliação-03 de dezembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item Um homem mora numa ilha a $6\ km$ de uma praia retilínea e sua namorada mora nessa praia, $4\ km$ distante do ponto da praia mais próximo da ilha. O homem pode remar seu barco a $3\ km/h$ e pode andar na praia a $5\ km/h$. Encontre o tempo mínimo gasto pelo homem para alcançar a casa de sua namorada.
+
+\item Dada a função $f(x)=\displaystyle\frac{x^3-x^2-x+5}{(x-1)^2}$, determine:
+\begin{enumerate} 
+\item Suas assíntotas, caso existam.
+\item Seus intervalos de crescimento e decrescimento.
+\item Seus pontos críticos.
+\item Onde a concavidade fica para cima e onde fica para baixo.
+\item Seus pontos de inflexão, caso existam.
+\end{enumerate}
+São dados: $$f'(x)=\frac{(x-3)(x^2+3)}{(x-1)^3}\ \ \text{e}\ \ \ f''(x)=\frac{24}{(x-1)^4}.$$
+Depois de tudo, trace o gráfico de $f$.
+
+\item Prove que o polinômio cúbico $p(x)=x^3+ax^2+bx+c$ tem um máximo local e um mínimo local, então o ponto de inflexão é o ponto médio do segmento de reta que liga os extremos locais.
+
+\item \begin{enumerate} \item Usando o teste da segunda derivada, determine os extremos relativos da função $f(x)=\displaystyle\frac{1}{12}(x^4+6x^3-18x^2)$.
+\item Ache os pontos de máximo e de mínimo locais da função\linebreak $f(x)=x^x$, caso existam.
+\end{enumerate}
+
+\item Dizemos que uma função $f$ cresce mais rápido que uma função $g$ se $\displaystyle\lim_{x\rightarrow\infty}\frac{f(x)}{g(x)}=\infty$ e que $f$ cresce mais devagar que $g$ se $\displaystyle\lim_{x\rightarrow\infty}\frac{f(x)}{g(x)}=0$.\\
+Use a Regra de L'Hôpital para determinar qual das 3 funções seguintes cresce mais rápido e qual cresce mais devagar:\\
+(i) $f(x)=e^{x^2}$;\ (ii) $g(x)=\log_{3}x$;\ (iii) $h(x)=\sqrt{x^3}$.
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reavaliação AB1-09 de dezembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate} \item Calcule $\displaystyle\lim_{x\rightarrow 0}\frac{\sqrt[3]{1+3x}-1}{x}$.
+\item Determine as assíntotas de $f(x)=\displaystyle\frac{\sqrt[3]{16-x^2}}{4-x}$.
+\end{enumerate}
+
+\item \begin{enumerate} 
+\item Sendo $f(x)=\log_{3}(\ln x^2)$,determine $\displaystyle\lim_{x\rightarrow 1^{-}} f'(x)$.
+\item Mostre que há pelo menos um número $c$ para o qual o valor da função $f(x)=x^3-8x+3$ é igual a $\cos 2$.
+\end{enumerate}
+
+\item \begin{enumerate} \item Para que valor de $x$ a função $f(x)=\sen(\arccos(\sqrt{x}))$ tem reta tangente com inclinação -1?
+\item Determine uma equação da reta tangente ao gráfico da função seguinte, no ponto $(0;2)$: $y=(2+x).e^{-x}$.
+\end{enumerate}
+
+\item Um dos vértices de um triângulo é o ponto $(0,0)$ e os outros dois são as intersecções da reta normal à curva $x^4=y^2$ no ponto $(1,1)$, com os eixos coordenados. Determine a área desse triângulo.
+
+\item Seja $f(x)=
+\left\{
+\begin{array}{lll}
+a+bx,\ \text{se}\ x> 2,\\
+3,\ \text{se}\ x=2,\\
+b-ax^2\ \text{se}\ x<2\\
+\end{array}
+\right.$.
+Determine os valores de $a$ e $b$ tais que $f(x)$ seja contínua em $x=2$. 
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reavaliação AB1-10 de dezembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate} \item Calcule $\displaystyle\lim_{x\rightarrow 2^{+}}\frac{[[x]]-1}{[[x]]-x}$, onde $[[x]]$ denota a função maior inteiro. 
+\item Calcule $\displaystyle\lim_{x\rightarrow 0}\frac{|2x-1|-|2x+1|}{x}$.
+\end{enumerate}
+
+\item \begin{enumerate} 
+\item Sejam $f(x)=\sqrt{x+1}$ e $g(x)=\frac{1}{x-3}$. Defina a função $h=f\circ g$ e determine os números onde $h$ é contínua.
+\item Calcule $\displaystyle\lim_{x\rightarrow\frac{\pi}{2}} (\sen x -1).\cos\left(\frac{1}{x-\frac{\pi}{2}}\right)$.
+\end{enumerate}
+
+\item \begin{enumerate} \item Em que ponto a curva $f(x)=\arctg x$ tem reta tangente paralela à reta tangente à curva $g(x)=\ln(\sec x)$ em $x=\dfrac{\pi}{4}$?
+\item Determine a função quadrática $f(x)=ax^2+bx+c$, sabendo-se que o gráfico de $f$ passa pelo ponto $(1,4)$ e que as retas tangentes em $x=1$ e $x=5$ têm inclinações 6 e -2, respectivamente.
+\end{enumerate}
+
+\item \begin{enumerate} \item Obtenha as equações das retas tangente e normal à curva $y=x^{\ln x}$, no ponto de abscissa 1.
+\item Verifique se a função $f(x)=|1-x^2|$ é derivável em $x=1$.
+\end{enumerate}
+
+\item \begin{enumerate} \item Enuncie o Teorema do Valor Intermediário.
+\item Ache uma equação para a reta tangente à curva $f(x)=\sqrt{\sen x+\cos x}$, no ponto onde $x=\dfrac{\pi}{4}$.
+\end{enumerate} 
+
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reavaliação AB2-09 de dezembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate} \item Mostre que $\displaystyle\lim_{n\rightarrow \infty}\left(1+\frac{x}{n}\right)^n=e^x$. 
+\item Use a Regra de L'Hôspital para calcular o seguinte limite: $\displaystyle\lim_{x\rightarrow 0}\frac{6x-2\sen 3x}{9x^3}$.
+\end{enumerate}
+
+\item Uma partícula se move sobre uma reta vertical de forma que sua coordenada no instante $t$ é $y=t^3-12t+3$, $t\geq 0$.
+\begin{enumerate} 
+\item Encontre as funções velocidade e aceleração.
+\item Quando a partícula está acelerando? Quando está freando?
+\end{enumerate}
+
+\item Encontre as dimensões do cilindro circular reto de maior área lateral que pode ser inscrito em uma esfera de raio $6\ cm$.
+
+\item \begin{enumerate} \item Encontre os números críticos da função $y=5\cosh x+4\senh x$.
+\item A altura $h$ e o raio $r$ da base de um cone circular reto estão variando a taxas constantes de $0,1\ m/s$ e $0,3\ m/s$, respectivamente. A que taxa estará variando o volume do cone no instante em que $h=0,5\ m$ e $r=0,2\ m$?
+\end{enumerate}
+
+\item Seja $f(x)$ uma função derivável no intervalo $(-1,1)$ e suponha que $f'(x)=x^2+(f(x))^2$, para todo $x\in(-1,1)$ e, além disso, que $f(0)=0$.
+\begin{enumerate}
+\item Mostre que em $x=0$ a reta tangente ao gráfico de $f(x)$ é horizontal e que o ponto de abscissa $x=0$ não é de máximo nem de mínimo.
+\item Determine os intervalos onde $f(x)$ é côncava para cima e para baixo.
+\end{enumerate} 
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Reavaliação AB2-10 de dezembro de 2011}
+\indent \par
+
+\begin{enumerate}
+
+\item \begin{enumerate} \item Uma pedra cai de uma altura de $64\ m$. Se $s$ for a altura da pedra $t$ segundos após ter iniciado a queda, então $s=-16t^2+64$.
+\begin{enumerate} \item Quanto tempo leva para a pedra atingir o solo?
+\item Com que velocidade a pedra atinge o solo?
+\end{enumerate} 
+\item Use o Teorema de Rolle para mostrar que a equação $x^5+c^2x-c=0$ tem no máximo uma raiz real, qualquer que seja a constante $c$.
+\end{enumerate}
+
+\item \begin{enumerate} 
+\item Determine os pontos de máximo e mínimo absolutos da função $y=3\cos 2x$ no intervalo fechado $[\pi/6,3\pi/4]$.
+\item Calcule a derivada de $y=e^x\senh x$.
+\end{enumerate}
+
+\item Um arame de $60\ cm$ de comprimento é cortado em dois. Uma das partes é dobrada na forma de um círculo, e a outra na forma de um quadrado. Como deve ser cortado o arame para que a soma das áreas do círculo e do quadrado seja mínima?
+
+\item A moto $A$ segue de leste para oeste com a velocidade de $40\ km/h$, e a moto $B$ segue de norte para sul com a velocidade de $60\ km/h$. Ambas se aproximando do ponto de encontro $I$. A que taxa o ângulo $BAI$ está variando quando $A$ está a $300\ km$ de $I$ e $B$ está a $400\ km$ de $I$?
+
+\item Seja $f(x)=\dfrac{x^2}{e^x}$, com $x\in\mathbb{R}$.
+\begin{enumerate}
+\item Determine os intervalos onde $f$ é crescente ou decrescente.
+\item Determine os intervalos onde $f$ é côncava para cima e para baixo.
+\item Encontre as assíntotas de $f$, caso existam.
+\item Esboce o gráfico de $f$.
+\end{enumerate} 
+
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Avaliação Final-16 de dezembro de 2012}
+\indent \par
+
+\begin{enumerate}
+
+
+\item \begin{enumerate}
+\item Dada a função $f(x)=
+\left\{
+\begin{array}{lll}
+3x+1,\ \text{se}\ x\leq 1,\\
+\dfrac{x^2+2x-3}{x-1}, \text{se}\ x>1,\\
+\end{array}
+\right.$\\
+determine todos os valores de $x$ para os quais ela é contínua.
+\item Existe $c\in(-1;2)$ tal que $f(c)=3$?
+\end{enumerate}
+
+\item \begin{enumerate} \item Verifique se a função $f(x)=|x^2-4|+1$, é derivável em $x=-2$.
+\item Sendo $g$ uma função real diferenciável e $f$ dada por $f(x)=x.g(x^2)$; encontre uma equação para a reta normal ao gráfico de $f$ no ponto em que $x=1$, sabendo que $g(1)=4$ e $g'(1)=2$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Dois lados de um triângulo têm comprimentos de $10\ m$ e $15\ m$. O ângulo entre eles aumenta a uma taxa de $\frac{1}{15}\ rad/min$. Com que velocidade a área do triângulo estará aumentando quando o ângulo entre eles for de $\theta=\dfrac{\pi}{3}\ rad$?
+\item No gráfico da função $f(x)=\arccos x$ há dois pontos para os quais se tem $|f'(x)|=\sqrt{2}$. Determine as abscissas desses pontos.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Encontre uma equação para a reta tangente à curva $f(x)=x^{\arctg(x^2)}$, no ponto de abscissa $x=1$.
+\item Sendo $y^3+(\cos x)y-8=0$, determine o coeficiente angular da reta tangente a essa curva no ponto em que $x=\dfrac{\pi}{2}$.\\
+(Sugestão: Use derivação implícita).
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Considere um cilindro circular reto, inscrito em um cone circular reto, de altura $H$ e raio da base $R$. Determine a altura e o raio do cilindro de volume máximo.
+\item Se $f(x)=\cos \sen\sqrt{x^2+1}$, determine uma equação para a reta normal ao gráfico de $f$, no ponto em que $x=0$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Considere a função $f(x)=
+\left\{
+\begin{array}{lll}
+x^3,\ \text{se}\ x\leq 0,\\
+x^4, \text{se}\ x>0.\\
+\end{array}
+\right.$\\
+Mostre que $f$ tem derivadas de 1ª e 2ª ordem em $x=0$, mas não tem derivada de 3ª ordem.
+\item Use o Teorema do Confronto para encontrar $\displaystyle\lim_{x\rightarrow 0}\frac{|x|}{\sqrt{x^4+4x^2+7}}$.
+\end{enumerate}
+
+\item \begin{enumerate}
+\item Mostre que a função $f(x)=1+x+x^{11}+x^{21}+x^{31}+x^{41}$ tem exatamente uma raiz real.
+\item Encontre a linearização da função $f(x)=\sqrt{x^2+1}$, em torno de $x=0$.
+\end{enumerate}
+
+\item \begin{enumerate} \item Seja $f(x)=\dfrac{x^2}{x^2+1}$, com $0\leq x\leq 1$. Determine o valor de $x$ onde $f$ está crescendo mais rapidamente.
+\item Calcule $\displaystyle\lim_{x\rightarrow\infty}\left(\frac{x-1}{x+1}\right)^x$.
+\end{enumerate}
+
+\item Calcule os limites abaixo sem usar a Regra de L'Hôpital.
+\begin{enumerate}
+\item $\displaystyle\lim_{x\rightarrow+\infty}(\sqrt[3]{x^3+1}-x)$;
+\item $\displaystyle\lim_{x\rightarrow 0}\frac{x^2+3x}{\sen x}$.
+\end{enumerate}
+
+\pagebreak
+
+\item Considere a função $f(x)=x^2+\dfrac{2}{x}$ definida para $x\neq 0$.
+\begin{enumerate}
+\item Determine os intervalos onde $f$ é crescente e decrescente.
+\item Determine os intervalos onde $f$ é côncava para cima e côncava para baixo.
+\item Determine as assíntotas de $f$, caso existam.
+\item Esboce o gráfico de $f$.
+\end{enumerate}
+
+
+\end{enumerate}
+
+\printindex
+
+
+\end{document}
