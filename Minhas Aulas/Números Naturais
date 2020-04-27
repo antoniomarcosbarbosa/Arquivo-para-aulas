@@ -1,0 +1,274 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{epigraph}
+\usepackage{hyperref}
+
+\columnsep=.6cm %Espaçamento entre as colunas
+\hoffset=-1cm %Recuo do texto horizontal
+\textwidth=15cm %Largura do texto
+\voffset=-1cm %Recuo vertical
+
+\author{Antônio Marcos Barbosa}
+\title{Números Naturais}
+
+\newtheorem{teo}{Teorema}
+\newtheorem{defi}{Definição}
+\newtheorem{exe}{Exemplo}
+
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+
+\newpage
+
+
+\section*{Introdução}
+O ser humano vive no tempo e no espaço. Desde seu surgimento sobre a terra em meio aos demais animais aprendeu maneiras de se manter vivo, algo difícil para uma espécie sem grandes atributos físicos como força ou velocidade. Porém com a colaboração em grupo pudemos utilizar a cognição para compensar nossas fraquezas. O homem sozinho na natureza é frágil e indefezo. Porém em conjunto tornou-se a espécie dominante e alcançou o ápice da cadeia alimentar. 
+
+Mas para viver em comunidades, principalmente comunidades contendo milhares de indivíduos como em cidades ou milhões como em povos e civilizações, necessitou-se produzir, armazenar e processar quantidades e absurdamente grandes de informações. Para armazenar e processar essas informações desenvolveu-se a escrita e os registros numéricos. 
+
+\begin{quote}
+	Você que calcula, soma ou subtrai, multiplica ou divide todos os dias, muitas vezes o dia todo, já chegou a se perguntar de onde vêm os números? Como o homem "descobriu" a matemática, como chegou ao estágio em que ele se encontra nas diversas ciências que compõem a área de exatas? De onde vêm os números? Como se contava antigamente? Quem inventou o zero? \cite{ifrah1989numeros}  
+\end{quote}
+
+
+\section{Era uma vez ...}
+
+
+A matemática está presente em quase todas as ações do dia-a-dia, ela faz parte do cotidiano e da história. As ideias humanas, seus costumes, sua língua, sua tecnologia e seus conhecimentos evoluem e se transformam. O conhecimento matemático, por ser um dos diversos conhecimentos humanos também evoluiu. Para exemplificar vemos que ``atualmente existem ainda homens incapazes de conceber qualquer número abstrato e que não sabem nem que dois e dois são quatro.''\cite{ifrah1989numeros} Como se contava antigamente? Como se contava antes dos números? A resposta a essas perguntas constitui a História da Matemática.
+
+Diferente do que alguns podem pensar, a Matemática não é um conjunto eterno de verdades absolutas que perduram para sempre na eteriedade das ideias. Ela é uma construção humana assim como sua cultura, crenças e ideologias. 
+
+A forma com que hoje fazemos cálculos em calculadoras e computadores é bem diferente da forma como as pessoas faziam contas antes destas tecnologias surgirem. Que por sua vez é diferente da forma com que faziam contas antes dos árabes popularizarem o sistema Indú de numeração que utilizamos. A forma como fazemos matemática evoluiu junto com a forma que fazemos qualquer coisa, logo a história da Matemática surgiu junto com a história do ser humano. 
+
+\subsection{Sobrecarga de memória}
+Conforme Yuval Noah Harari\cite{harari2015sapiens}, historiador e escritor do best seller \textit{Sapiens: Uma breve história da humanidade}, ``grandes sistemas de cooperação que envolve milhares ou mesmo milhões de seres humanos requerem o manuseio e o armazenamento de quantidades enormes de informação, muito mais do que um único cérebro humano pode conter e processar".
+
+A capacidade cerebral humana é limitada, a informação se perde com a morte do indivíduo, além do mais, o cérebro humano foi adaptado para armazenar e processar apenas determinados tipos de informação: botânica, zoológica, topográfica e social.
+
+Depois da Revolução Agrícola surgiu um novo tipo de informação: os números. Para manter reinos grandes, dados matemáticos eram fundamentais para, entre outros motivos, cobrar impostos.
+
+\begin{quotation}
+	Conforme o número de habitantes cresceu [da Mesopotâmia], também aumentou a quantidade de informações requeridas para coordenar seus assuntos. Entre os anos 3500 e 3000 a.C., alguns gênios sumérios desconhecidos inventaram um sistema para armazenar e processar informações fora do cérebro concebido especialmente para lidar com grandes quantidades de dados matemáticos. Com isso, os sumérios libertaram sua ordem social das limitações do cérebro humano, abrindo caminho para o surgimento de cidades, reinos e impérios. O sistema de processamento de dados inventado pelos sumérios é chamado ?escrita? (\cite{harari2015sapiens}, p.128).
+\end{quotation}
+
+\subsection{Contagem e linguagem}
+Alguns alunos, devido a esposição compartimentada do currículo, pressupõe que um professor de Matemática não possa diminuir pontuação em uma avaliação na qual o aluno cometa erros de escrita. Porém o que se pode dizer da história sobre as relações entre Matemática e Língua? A título de exemplo, na Língua Portuguesa, temos o conceito de número. Ele é tão importente que temos uma classe de palavras da morfologia dedicado apenas a eles. Conforme a gramática os números são: Cardinais, Ordinais, Multiplicativos e Fracionários. As demais classes de palavras que são variáveis também podem variar em número podendo ser singular ou plural.
+
+Explorando essa siferença de flexão de número em Singular e Plural, os historiadores da Matemática afirmam que os primeiros sistemas de numeração eram exatamente os binários (dois em dois) e os ternários (três em três). O sistema binário não é uma invenção moderda da tecnologia e da informática, ele é muito mais antigo que se pensa. Infrah\cite{ifrah1989numeros} afirma que
+
+\begin{quotation}
+	Inúmeras hordas ``primitivas'' se encontram, ainda hoje, nesse ``grau zero'' - se assim podemos dizer - quanto ao conhecimento dos números. É, por exemplo, o caso dos zulus e dos pigmeus, da Africa, dos aranda e dos kamilarai, da Austrália, dos aborígines das ilhas Murray e dos botocudos, do Brasil. Um, dois e... muitos constituem as únicas grandezas numéricas desses indígenas que ainda vivem na idade da pedra. p. 15.
+\end{quotation}
+
+\subsection{Contagem e linguagem}
+Alguns alunos, devido a esposição compartimentada do currículo, pressupõe que um professor de Matemática não possa diminuir pontuação em uma avaliação na qual o aluno cometa erros de escrita. Porém o que se pode dizer da história sobre as relações entre Matemática e Língua? A título de exemplo, na Língua Portuguesa, temos o conceito de número. Ele é tão importente que temos uma classe de palavras da morfologia dedicado apenas a eles. Conforme a gramática os números são: Cardinais, Ordinais, Multiplicativos e Fracionários. As demais classes de palavras que são variáveis também podem variar em número podendo ser singular ou plural.
+
+Explorando essa siferença de flexão de número em Singular e Plural, os historiadores da Matemática afirmam que os primeiros sistemas de numeração eram exatamente os binários (dois em dois) e os ternários (três em três). O sistema binário não é uma invenção moderda da tecnologia e da informática, ele é muito mais antigo que se pensa. Infrah\cite{ifrah1989numeros}\footnote{\url{https://bit.ly/2y2vRej}} afirma que
+
+\begin{quotation}
+	Inúmeras hordas ``primitivas'' se encontram, ainda hoje, nesse ``grau zero''- se assim podemos dizer - quanto ao conhecimento dos números. É, por exemplo, o caso dos zulus e dos pigmeus, da Africa, dos aranda e dos kamilarai, da Austrália, dos aborígines das ilhas Murray e dos botocudos, do Brasil. Um, dois e... muitos constituem as únicas grandezas numéricas desses indígenas que ainda vivem na idade da pedra. p. 15.
+\end{quotation}
+
+\subsection{Os animais também contam}
+Apesar da cognição ser uma característica intrinseca do  Homo sapiens, ela também é presente nos animais. Coisas que geralmente é atribuida apenas aos seres humanos também podem ser efetuadas, ainda que em escala menor pelos outros animais. A capacidade de contar é uma delas. Podevos verificar em (\cite{ifrah1989numeros}, p.19, 20) as seguintes passagens:
+
+\begin{quote}
+	Determinadas espécies animais também são dotadas de um tipo de percepção direta dos números. Em alguns casos, esta capacidade natural lhes permite reconhecer que um conjunto (numericamente reduzido), observado pela segunda vez, sofreu uma modificação depois que um ou vários componentes foram retirados ou acrescentados.
+	
+	Um castelão decidiu matar um corvo que fez seu ninho na torre do castelo. Já tentara várias vezes surpreender o pássaro, mas ao se aproximar o corvo deixava o ninho, instalava-se numa árvore próxima e só voltava quando o homem saía da torre. Um dia, o castelão recorreu a uma artimanha: fez entrar dois companheiros na torre. Instantes depois, um deles desaparecia, enquanto o outro ficava. Mas, em vez de cair nesse golpe, o corvo esperava a partida do segundo para voltar a seu lugar. Da próxima vez ele fez entrar três homens, dos quais dois se afastaram em seguida: o terceiro pôde então esperar a ocasião para pegar o corvo, mas a esperta ave se mostrou ainda mais paciente que ele. Nas tentativas seguintes, recomeçou-se a experiência com quatro homens, sempre sem resultado. Finalmente, o estratagema teve sucesso com cinco pessoas, pois nosso corvo não conseguia reconhecer mais que quatro homens ou quatro objetos...
+\end{quote}
+
+
+\section{Números Naturais}
+
+\epigraph{Namore com um matemático. Com agente você pode contar}{Meme da internete}
+
+Os números naturais surgiram devido a necessidade de contagem, ordenação e codificação de objetos. Os símbolos que utilizamos são chamados de algarismos. Os nossos algarismos eles são $$0,1,2,3,4,5,6,7,8,9$$
+
+\subsection{Número e Numeral}
+
+Númeral é a forma usada para expressar um número. O numeral pode ser um símbolo gráfico, uma palavra ou um gesto. 
+
+Os números naturais pode ter diversas utilidades. Ele pode indicar uma quantidade, uma posição ou servir apenas como um código. 
+
+\subsection{Sucessor e antecessor}
+	
+\includegraphics[scale=1]{01}
+	
+\subsection{Par e Ímpar}
+\begin{exe}
+	Na festa de Santa Maria Madalena, Padroeira de União dos Palmares, compareceram milhares de pessoas.  Mil, duzentos e trinta e sete pessoas estavam dançando.
+	
+	Quantos casais de dança poderiam ser formados? Todas as pessoas estariam dançando com seu par ou alguém estaria dançando sozinho? E se saíssem três pessoas, como ficariam distribuídos os casais de dança? Teria alguém dançando sozinho?
+\end{exe}
+
+
+\subsection{Outras sequências numéricas}
+
+\subsection{Sistemas de numeração decimal}\footnote{D13 - Reconhecer e utilizar características do sistema de numeração decimal como agrupamentos e trocas na base $10$ e princípio do valor posicional.D15 - Reconhecer a decomposição de números naturais nas suas diversas ordens.D16 - Reconhecer a composição e a decomposição de números naturais em forma polinomial.}
+
+
+A televisão, o computador e os demais objetos que costumamos utilizar diariamente não surgiram do nada, foram criados por pessoas como nós que, por seus motivos, as fizeram. Com as ideias ocorre o mesmo. Se hoje se torna absurdo que uma pessoa seja considerada dona de outra foi por que alguém cultivou essa ideia e lutou para que fosse disseminada ao ponto que hoje em dia se torna absurdo a escravidão.
+
+O sistema de numeração é uma ideia muito elaborada e extremamente útil que foi construído vagarosamente por diversos povos para solucionarem suas dificuldades e facilitarem suas vidas. Não é necessário conhecer como uma televisão é feita para poder assisti-la, logo normalmente não é necessário conhecer a história do desenvolvimento dos sistemas numéricos para poder utilizá-los na hora de calcular o troco do pão. Porém conhecer como a TV funciona pode ajudar bastante na hora de solucionar pequenos problemas economizando com um serviço especializado. Pode-se ainda procurar meios para evoluir a televisão para que ela seja mais útil e tenha mais funcionalidades. Igualmente conhecer melhor os sistemas de numeração é essencial para poder absorver e melhorar sua forma de lhe dar com os números.
+
+\begin{exe}
+	Qual é o valor representado por dois tracinhos verticais?
+\end{exe}
+
+Se for no sistema binário valerá 3, se for no romano será 2, caso seja no decimal derá 11. O mesmo símbolo pode representar coisas diferentes em contextos diferentes.
+
+Compreender o sistema de numeração decimal é uma capacidade descrita em \ref{itm5:D13}. Para cumprir em esse ponto da matriz curricular espera-se que o aluno perceba que cada agrupamento de 10 unidades, 10 dezenas, 10 centenas etc, requer uma troca do algarismo do número na posição correspondente à unidade, centena etc., respectivamente.
+
+\begin{exe}
+	Qual o maior número que você pode escrever usando os algarismos 8,9,1,5 e 7 sem repetí-los?
+	
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item[a)] $91 \ 875$
+			\item[b)] $98 \ 715$
+			\item[c)] $98 \ 751$
+			\item[d)] $97 \ 851$
+		\end{enumerate}
+	\end{multicols}
+\end{exe}
+\begin{exe}
+	Um feirante levou dois centos de laranjas para vender na feira, dessas, vendeu um cento, quatro dezenas e oito unidades. O número de laranjas que sobrou foi:
+	
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item[a)] $48$
+			\item[b)] $52$
+			\item[c)] $148$
+			\item[d)] $152$
+		\end{enumerate}
+	\end{multicols}
+\end{exe}
+
+\begin{exe}
+	Em uma cidade, o número de carros é formado por seis milhares, mais sete centenas,
+	mais oito dezenas e mais seis unidades que são iguais a:
+	
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item[a)] $6786$
+			\item[b)] $6876$
+			\item[c)] $7686$
+			\item[d)] $8766$
+		\end{enumerate}
+	\end{multicols}
+\end{exe}
+
+\nocite{rabelo2013avaliaccao}
+
+
+%\subsection{Estruturação e sequências numéricas}
+
+
+Começando com o número $1$ como ponto de partida podemos dizer que o seu \textbf{sucessor} será $1+1=2$. O sucessor de $2$ será $2+1=3$. O sucessor de $3$ é $3+1=4$. Dessa forma colocando o um na lista e acrescentando sempre o sucessor do último número acrescentado teremos a lista abaixo:
+
+$$1,2,3,4,5,6,7,8,9,10,11,12,\dots$$
+
+%\begin{snugshade}
+\begin{itemize}
+	\item Nessa sequência os números estão em ordem crescente (almentando) ou em ordem decrescente (diminuindo)?
+	\item O primeiro número da sequência dos números naturais é o 1, mas e se começasse com o número 0, qual seria a diferença na lista?
+	\item O que representa as reticências $(\dots)$ no final da lista?
+	\item O número $2$ pode ser alcançado obtendo o sucessor do sucessor de $1$, ou seja $(1+1)$. Como é possível alcançar o $5$?
+	\item Números muito grandes como $250$ ou $379000$ podem ser alcançados dessa forma?
+	\item Existe algum número que seja tão grande que não possa ser alcançado dessa forma?
+	\item Infinito é um número?
+	\item Todos os números naturais tem sucessores?
+	\item Todos os números naturais tem antecessores? Existe algum número natural que seja menor que todos os outros?
+	\item Qual o sucessor de $300$? E o sucessor de $1000$?
+	\item Existe um número maior que todos os outros?
+\end{itemize}
+%\end{snugshade}
+\subsection{Representação geométrica de nº naturais}
+%\section{A reta numérica}
+
+%\begin{snugshade}
+\begin{itemize}
+\item[D14] Identificar a localização de números naturais na reta numérica.
+\end{itemize}
+%\end{snugshade}
+
+\begin{center}
+	\begin{tabular}{r|r|r|r|r|r|r|r|r|r}
+		1  &  2 &  3 &  4 &  5 &  6 &  7 &  8 &  9 & 10\\
+		2  &  4 &  6 &  8 & 10 & 12 & 14 & 16 & 18 & 20\\
+		3  &  6 &  9 & 12 & 15 & 18 & 21 & 24 & 27 & 30\\
+		4  &  8 & 12 & 16 & 20 & 24 & 28 & 32 & 36 & 40\\
+		5  & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50\\
+		6  & 12 & 18 & 24 & 30 & 36 & 42 & 48 & 54 & 60\\
+		7  & 14 & 21 & 28 & 35 & 42 & 49 & 56 & 63 & 70\\
+		8  & 16 & 24 & 32 & 40 & 48 & 56 & 64 & 72 & 80\\
+		9  & 18 & 27 & 26 & 45 & 54 & 63 & 72 & 81 & 90\\
+		10 & 20 & 30 & 40 & 50 & 60 & 70 & 80 & 90 & 100\\
+	\end{tabular}
+\end{center}
+
+
+CONSTRUIR NUMERAÇÃO DE 1 A 100 NA FORMA DE GRADE QUE VAI DE 10 EM 10. TRABALHAR SOMAS, SUBTRAÇÕES E MULTIPLICAÇÕES NOS NATURAIS E MOSTRAR AOS ALUNOS QUE A ORGANIZAÇÃO DOS NÚMEROS DE FORMA LINEAR É MAIS ÚTIL E PRÁTICO QUE A ORGANIZAÇÃO EM GRADE.
+
+
+	
+	\section{Operações em N}
+\subsection{Adição e subtração}
+\subsection{Multiplicação e divisão}
+\subsection{Potenciação}
+\subsection{MMC e MDC}
+\subsection{Divisibilidade por 2,3,4,5,6,8,9 e 10}
+
+
+\subsection{Números Primos e Compostos}
+
+
+
+\section{Atividades}
+\begin{enumerate}
+	\item No número $784 321$ qual é o algarismo que ocupa a ordem das unidades de milhares?%200-225 Intermediário0
+	\item O professor de Matemática escreveu por extenso, no quadro, o número 35 780.
+	Como ele escreveu esse número por extenso?%Nível Intermediário
+	\item Se somarmos 3 centenas com 30 dezenas e com 300 umidades, quanto obtemos?
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item 333
+			\item 660
+			\item 900
+			\item 963
+		\end{enumerate}
+	\end{multicols}
+	\item A população de uma certa cidade é de um milhão trezentos e oito mil e quarenta e sete habitantes. Utilizando alfarismos, o total de habitantes dessa cidade é
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item 1 303 407
+			\item 1 308 047
+			\item 1 308 470
+			\item 1 380 047
+		\end{enumerate}
+	\end{multicols}
+\end{enumerate}
+
+\begin{enumerate}
+	\item (saresp, 2012) Aline é costureira e Simone é bordadeira. Juntas fizeram 5 blusas iguais. Aline confeccionou-as e Simone bordou-as. Venderam as cinco blusas por R\$ 175,00. Pela confecção de cada blusa, Aline recebeu R\$ 20,00. Assim, pelo bordado de cada blusa, Simone recebeu:%Resolver problemas envolvendo as quatro operações básicas entre números inteiros (adição, subtração, multiplicação e divisão)
+	\subitem R\$ 15,00.
+	\subitem R\$ 31,00.
+	\subitem R\$ 35,00.
+	\subitem R\$ 155,00.
+\end{enumerate}
+
+
+\newpage
+%ESTIDO DA BIBLIOGRAFIA
+\bibliographystyle{acm}
+
+%BIBLIOGRAFIA UTILIZADA
+\bibliography{ref}
+\end{document}
