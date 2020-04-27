@@ -1,42 +1,55 @@
-\usepackage[latin1]{inputenc}
-\usepackage[brazilian]{babel}
-\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\documentclass{article}
+
+%--------------------------------------------------------------------------------------------------------
+% PACKAGES USADOS
+%--------------------------------------------------------------------------------------------------------
+
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[
+paperwidth=20cm, %Largura da página
+paperheight=3cm, %Comprimento da página
+left=.4cm, %Margem esquerda
+total={6.5in,3.5in}%Região ocupada pelo texto na página
+]{geometry}
+
+
+
 \usepackage{tikz}
-\usepackage{graphicx}
-\usepackage{xcolor,color}
+\usepackage{fourier}
 \usepackage{hyperref}
-\usepackage{multicol}
-%    \definecolor{shadecolor}{RGB}{236,236,236}
-\usepackage[bottom=2cm,top=1cm,left=1.5cm,right=1.5cm]{geometry}
-\usepackage{mathtools}
-\usepackage{tkz-linknodes}
-\usepackage{enumitem}
 
-\usepackage{framed}
+%--------------------------------------------------------------------------------------------------------
+% OUTRAS CONFIGURAÇÕES
+%--------------------------------------------------------------------------------------------------------
 
-%\definecolor{shadecolor}{rgb}{0.8,0.8,0.8} 
-%\usepackage[brazil]{babel}
 
-\newtheorem{teo}{Teorema}
-\newtheorem{defi}{Definição}
-\newtheorem{exe}{Exemplo}
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%///////////// Comandos para capítulos ///////////////////
-\newtheorem{defcap}{Definição}[chapter]
-\newtheorem{lema}{Lema}[chapter]
-%	 \newtheorem{teo}{Teorema}[chapter]
-\newtheorem{cor}{Corolário}[chapter]
-\newtheorem{prop}{Proposição}[chapter]
-\newtheorem{obscap}{Observação}[chapter]
-\newtheorem{exemplo}{Exemplo}[chapter]
-\newtheorem{afir}{Afirmação}[chapter]
+\pgfsetlayers{background,main}
 
-%///////////// Comandos para seções ///////////////////
-\newtheorem{definition}{Definição}[section]
-\newtheorem{teosec}{Teorema}[section]
-\newtheorem{propsec}{Proposição}[section]
-\newtheorem{corsec}{Corolário}[section]
-\newtheorem{lemsec}{Lema}[section]
-\newtheorem{exsec}{Exemplo}[section]
-\newtheorem{obs}{Observação}[section]
+%--------------------------------------------------------------------------------------------------------
+% INÍCIO DO DOCUMENTO
+%--------------------------------------------------------------------------------------------------------
+
+\begin{document}
+	\begin{tikzpicture}[remember picture, overlay]
+		\node(Logo) at (current page.north west) [anchor=north west,xshift=.5cm, yshift=-.7cm]{\resizebox{4cm}{1cm}{ $\int \frac{o}{\varphi} \theta educ $}};
+		
+		\node(Disciplina) at (Logo.north west) [anchor=north west, minimum width=\linewidth-2.5cm, align=center,xshift=2cm, yshift=1mm]{\huge \sc Exercícios de Matemática};
+		
+		\node (Site) at (Disciplina)[anchor=east,xshift=4cm,yshift=-1.1cm]{\url{https://sites.google.com/view/barbosasite/home}};
+		
+		\node(Data) at (current page.north east)[anchor=north east,xshift=-.5cm, yshift=-.7cm]{25 de Setembro de 2017};
+		
+		\node (Turma) at (Data.south east)[anchor=east, yshift=-.9cm]{Turma - 9° Ano A};
+		
+		\begin{pgfonlayer}{background}
+			\draw[fill=orange!20] ([yshift=2mm, xshift=-2mm]Logo.north west) rectangle ([xshift=2mm, yshift=-2mm]Turma.south east);
+		\end{pgfonlayer}
+		
+	\end{tikzpicture}
+	
+\end{document}
