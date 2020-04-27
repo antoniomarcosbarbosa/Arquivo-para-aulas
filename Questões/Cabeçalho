@@ -1,0 +1,42 @@
+\usepackage[latin1]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{xcolor,color}
+\usepackage{hyperref}
+\usepackage{multicol}
+%    \definecolor{shadecolor}{RGB}{236,236,236}
+\usepackage[bottom=2cm,top=1cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{mathtools}
+\usepackage{tkz-linknodes}
+\usepackage{enumitem}
+
+\usepackage{framed}
+
+%\definecolor{shadecolor}{rgb}{0.8,0.8,0.8} 
+%\usepackage[brazil]{babel}
+
+\newtheorem{teo}{Teorema}
+\newtheorem{defi}{Definição}
+\newtheorem{exe}{Exemplo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%///////////// Comandos para capítulos ///////////////////
+\newtheorem{defcap}{Definição}[chapter]
+\newtheorem{lema}{Lema}[chapter]
+%	 \newtheorem{teo}{Teorema}[chapter]
+\newtheorem{cor}{Corolário}[chapter]
+\newtheorem{prop}{Proposição}[chapter]
+\newtheorem{obscap}{Observação}[chapter]
+\newtheorem{exemplo}{Exemplo}[chapter]
+\newtheorem{afir}{Afirmação}[chapter]
+
+%///////////// Comandos para seções ///////////////////
+\newtheorem{definition}{Definição}[section]
+\newtheorem{teosec}{Teorema}[section]
+\newtheorem{propsec}{Proposição}[section]
+\newtheorem{corsec}{Corolário}[section]
+\newtheorem{lemsec}{Lema}[section]
+\newtheorem{exsec}{Exemplo}[section]
+\newtheorem{obs}{Observação}[section]
